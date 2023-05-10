@@ -1,0 +1,12 @@
+var searchData=
+[
+  ['createcommander_106',['createCommander',['../function-bd_8c.html#a3f2d10defbb427880df651cc40918d55',1,'createCommander(MYSQL *db, User *user, Plat *plat):&#160;function-bd.c'],['../function-bd_8h.html#a3f2d10defbb427880df651cc40918d55',1,'createCommander(MYSQL *db, User *user, Plat *plat):&#160;function-bd.c']]],
+  ['createevent_107',['createEvent',['../function-bd_8c.html#a795bf925a246abd3a1984e7dc733db7c',1,'function-bd.c']]],
+  ['createfilm_108',['createFilm',['../function-bd_8c.html#a85cfa50a790ad4070a6e12846b111a61',1,'createFilm(MYSQL *db, Film *film, Session *session):&#160;function-bd.c'],['../function-bd_8h.html#a85cfa50a790ad4070a6e12846b111a61',1,'createFilm(MYSQL *db, Film *film, Session *session):&#160;function-bd.c']]],
+  ['createplace_109',['createPlace',['../function-bd_8c.html#a8df4fb9e8e3dd4f7e5f5587e2d58b28d',1,'createPlace(MYSQL *db, Place *place, Event *event):&#160;function-bd.c'],['../function-bd_8h.html#a8df4fb9e8e3dd4f7e5f5587e2d58b28d',1,'createPlace(MYSQL *db, Place *place, Event *event):&#160;function-bd.c']]],
+  ['createplat_110',['createPlat',['../function-bd_8c.html#ad85f2c9623c3c268cb933ec16a279598',1,'createPlat(MYSQL *db, Plat *plat, Event *event):&#160;function-bd.c'],['../function-bd_8h.html#ad85f2c9623c3c268cb933ec16a279598',1,'createPlat(MYSQL *db, Plat *plat, Event *event):&#160;function-bd.c']]],
+  ['createreservation_111',['createReservation',['../function-bd_8c.html#ae9ca1372bc353c4f2b8513946c64f6e4',1,'createReservation(MYSQL *db, User *user, Place *place):&#160;function-bd.c'],['../function-bd_8h.html#ae9ca1372bc353c4f2b8513946c64f6e4',1,'createReservation(MYSQL *db, User *user, Place *place):&#160;function-bd.c']]],
+  ['createsession_112',['createSession',['../function-bd_8c.html#a0b359274b0442de3df9d4013ed6c4d1f',1,'createSession(MYSQL *db, Session *session, Event *event):&#160;function-bd.c'],['../function-bd_8h.html#a0b359274b0442de3df9d4013ed6c4d1f',1,'createSession(MYSQL *db, Session *session, Event *event):&#160;function-bd.c']]],
+  ['createticket_113',['createTicket',['../function-bd_8c.html#a656eebee439bd5f57805341746465b64',1,'createTicket(MYSQL *db, Ticket *ticket, Event *event, User *user):&#160;function-bd.c'],['../function-bd_8h.html#a656eebee439bd5f57805341746465b64',1,'createTicket(MYSQL *db, Ticket *ticket, Event *event, User *user):&#160;function-bd.c']]],
+  ['createuser_114',['createUser',['../function-bd_8c.html#a3c02e2ad6109da33dbb21de526f4b7b4',1,'function-bd.c']]]
+];

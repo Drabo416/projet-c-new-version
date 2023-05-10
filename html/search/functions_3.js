@@ -1,0 +1,10 @@
+var searchData=
+[
+  ['getevents_120',['getEvents',['../function-bd_8c.html#ae3c6cfaad3a60fe9b3a8585f4d68d1a8',1,'getEvents(MYSQL *db):&#160;function-bd.c'],['../function-bd_8h.html#afa452a74d102389df94105095a3c16b8',1,'getEvents(MYSQL *db):&#160;function-bd.c']]],
+  ['getfilmbysessionid_121',['getFilmBySessionId',['../function-bd_8c.html#a98161e83bb97f93ff44200aced82e97e',1,'getFilmBySessionId(MYSQL *db, Session *session):&#160;function-bd.c'],['../function-bd_8h.html#a98161e83bb97f93ff44200aced82e97e',1,'getFilmBySessionId(MYSQL *db, Session *session):&#160;function-bd.c']]],
+  ['getplacebyeventid_122',['getPlaceByEventId',['../function-bd_8c.html#adaee5408f4f783ab52d66026baabb539',1,'getPlaceByEventId(MYSQL *db, Event *event):&#160;function-bd.c'],['../function-bd_8h.html#adaee5408f4f783ab52d66026baabb539',1,'getPlaceByEventId(MYSQL *db, Event *event):&#160;function-bd.c']]],
+  ['getplatbyeventid_123',['getPlatByEventId',['../function-bd_8c.html#adbad9aa2a5a8e515f6bc7e563b614479',1,'getPlatByEventId(MYSQL *db, Event *event):&#160;function-bd.c'],['../function-bd_8h.html#adbad9aa2a5a8e515f6bc7e563b614479',1,'getPlatByEventId(MYSQL *db, Event *event):&#160;function-bd.c']]],
+  ['getsessionbyeventid_124',['getSessionByEventId',['../function-bd_8c.html#a206126954c808f6bf94a5aea8ecb1d19',1,'getSessionByEventId(MYSQL *db, Event *event):&#160;function-bd.c'],['../function-bd_8h.html#a206126954c808f6bf94a5aea8ecb1d19',1,'getSessionByEventId(MYSQL *db, Event *event):&#160;function-bd.c']]],
+  ['getticketbyuserid_125',['getTicketByUserId',['../function-bd_8c.html#aa1356d9f82b02a369219b7476d75250d',1,'getTicketByUserId(MYSQL *db, User *user, Event **event):&#160;function-bd.c'],['../function-bd_8h.html#aa1356d9f82b02a369219b7476d75250d',1,'getTicketByUserId(MYSQL *db, User *user, Event **event):&#160;function-bd.c']]],
+  ['getusers_126',['getUsers',['../function-bd_8c.html#a08279cf6a88accd06743c978a8b50473',1,'getUsers(MYSQL *db):&#160;function-bd.c'],['../function-bd_8h.html#a08279cf6a88accd06743c978a8b50473',1,'getUsers(MYSQL *db):&#160;function-bd.c']]]
+];

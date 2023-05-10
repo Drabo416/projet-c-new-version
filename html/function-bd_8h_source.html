@@ -1,0 +1,129 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>My Project:  Fichier source de function-bd.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">function-bd.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="function-bd_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef FUNCTION_BD_H</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define FUNCTION_BD_H</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="struc_8h.html">struc.h</a>&quot;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;mysql/mysql.h&gt;</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<a class="code" href="structuser.html">User</a> *<a class="code" href="function-bd_8h.html#a08279cf6a88accd06743c978a8b50473">getUsers</a>(MYSQL *db);</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<a class="code" href="structticket.html">Ticket</a> *<a class="code" href="function-bd_8h.html#a656eebee439bd5f57805341746465b64">createTicket</a>(MYSQL *db,<a class="code" href="structticket.html">Ticket</a> *<a class="code" href="structticket.html">ticket</a>, <a class="code" href="structevent.html">Event</a> * <a class="code" href="structevent.html">event</a>, <a class="code" href="structuser.html">User</a> *<a class="code" href="structuser.html">user</a>);</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="keywordtype">void</span> <a class="code" href="function-bd_8h.html#ae9ca1372bc353c4f2b8513946c64f6e4">createReservation</a>(MYSQL * db, <a class="code" href="structuser.html">User</a> * <a class="code" href="structuser.html">user</a>, <a class="code" href="structplace.html">Place</a> * <a class="code" href="structplace.html">place</a>);</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="keywordtype">void</span> <a class="code" href="function-bd_8h.html#a3f2d10defbb427880df651cc40918d55">createCommander</a>(MYSQL * db, <a class="code" href="structuser.html">User</a> * <a class="code" href="structuser.html">user</a>, <a class="code" href="structplat.html">Plat</a> * <a class="code" href="structplat.html">plat</a>);</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<a class="code" href="structplat.html">Plat</a> * <a class="code" href="function-bd_8h.html#ad85f2c9623c3c268cb933ec16a279598">createPlat</a>(MYSQL * db, <a class="code" href="structplat.html">Plat</a> * <a class="code" href="structplat.html">plat</a>, <a class="code" href="structevent.html">Event</a> * <a class="code" href="structevent.html">event</a>);</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<a class="code" href="structplace.html">Place</a> * <a class="code" href="function-bd_8h.html#a8df4fb9e8e3dd4f7e5f5587e2d58b28d">createPlace</a>(MYSQL * db, <a class="code" href="structplace.html">Place</a> * <a class="code" href="structplace.html">place</a>, <a class="code" href="structevent.html">Event</a> * <a class="code" href="structevent.html">event</a>);</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<a class="code" href="structsession.html">Session</a> * <a class="code" href="function-bd_8h.html#a0b359274b0442de3df9d4013ed6c4d1f">createSession</a>(MYSQL * db, <a class="code" href="structsession.html">Session</a> * <a class="code" href="structsession.html">session</a>, <a class="code" href="structevent.html">Event</a> * <a class="code" href="structevent.html">event</a>);</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<a class="code" href="structfilm.html">Film</a> * <a class="code" href="function-bd_8h.html#a85cfa50a790ad4070a6e12846b111a61">createFilm</a>(MYSQL * db, <a class="code" href="structfilm.html">Film</a> * <a class="code" href="structfilm.html">film</a>, <a class="code" href="structsession.html">Session</a> * <a class="code" href="structsession.html">session</a>);</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160; </div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<a class="code" href="structevent.html">Event</a> * <a class="code" href="function-bd_8h.html#a3fe9e952d0bb9ecf509b6d69f3be49d9">updateEvent</a>(MYSQL * db, <a class="code" href="structevent.html">Event</a> * <a class="code" href="structevent.html">event</a>);</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160; </div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;<span class="keywordtype">void</span> <a class="code" href="function-bd_8h.html#adad22c1542fdbf5eedc5cab0416d7c59">deleteEvent</a>(MYSQL * db, <a class="code" href="structevent.html">Event</a> * <a class="code" href="structevent.html">event</a>);</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160; </div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;<a class="code" href="structplat.html">Plat</a> ** <a class="code" href="function-bd_8h.html#adbad9aa2a5a8e515f6bc7e563b614479">getPlatByEventId</a>(MYSQL * db, <a class="code" href="structevent.html">Event</a> * <a class="code" href="structevent.html">event</a>);</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160; </div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;<a class="code" href="structsession.html">Session</a> ** <a class="code" href="function-bd_8h.html#a206126954c808f6bf94a5aea8ecb1d19">getSessionByEventId</a>(MYSQL * db, <a class="code" href="structevent.html">Event</a> * <a class="code" href="structevent.html">event</a>);</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160; </div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;<a class="code" href="structplace.html">Place</a> ** <a class="code" href="function-bd_8h.html#adaee5408f4f783ab52d66026baabb539">getPlaceByEventId</a>(MYSQL * db, <a class="code" href="structevent.html">Event</a> * <a class="code" href="structevent.html">event</a>);</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160; </div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;<a class="code" href="structticket.html">Ticket</a> * <a class="code" href="function-bd_8h.html#aa1356d9f82b02a369219b7476d75250d">getTicketByUserId</a>(MYSQL * db, <a class="code" href="structuser.html">User</a> * <a class="code" href="structuser.html">user</a>, <a class="code" href="structevent.html">Event</a> ** <a class="code" href="structevent.html">event</a>);</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160; </div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;<a class="code" href="structevent.html">Event</a> * <a class="code" href="function-bd_8h.html#afa452a74d102389df94105095a3c16b8">getEvents</a>(MYSQL * db);</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;<a class="code" href="structevent.html">Event</a> * <a class="code" href="function-bd_8h.html#afa452a74d102389df94105095a3c16b8">getEvents</a>(MYSQL *db);</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;<a class="code" href="structfilm.html">Film</a> ** <a class="code" href="function-bd_8h.html#a98161e83bb97f93ff44200aced82e97e">getFilmBySessionId</a>(MYSQL *db, <a class="code" href="structsession.html">Session</a> *<a class="code" href="structsession.html">session</a>);</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="function-bd_8h.html#abfabec1ac7ace6cf06d46acaaff1ac00">authentification</a>(MYSQL *db, <a class="code" href="structuser.html">User</a> *<a class="code" href="structuser.html">user</a>);</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="afunction-bd_8h_html_a08279cf6a88accd06743c978a8b50473"><div class="ttname"><a href="function-bd_8h.html#a08279cf6a88accd06743c978a8b50473">getUsers</a></div><div class="ttdeci">User * getUsers(MYSQL *db)</div><div class="ttdoc">Fonction pour créer un nouvel utilisateur dans la base de données.</div><div class="ttdef"><b>Definition:</b> function-bd.c:33</div></div>
+<div class="ttc" id="afunction-bd_8h_html_a0b359274b0442de3df9d4013ed6c4d1f"><div class="ttname"><a href="function-bd_8h.html#a0b359274b0442de3df9d4013ed6c4d1f">createSession</a></div><div class="ttdeci">Session * createSession(MYSQL *db, Session *session, Event *event)</div><div class="ttdoc">Crée une nouvelle session dans la base de données pour un événement donné</div><div class="ttdef"><b>Definition:</b> function-bd.c:125</div></div>
+<div class="ttc" id="afunction-bd_8h_html_a206126954c808f6bf94a5aea8ecb1d19"><div class="ttname"><a href="function-bd_8h.html#a206126954c808f6bf94a5aea8ecb1d19">getSessionByEventId</a></div><div class="ttdeci">Session ** getSessionByEventId(MYSQL *db, Event *event)</div><div class="ttdoc">Récupère toutes les sessions associées à un événement donné dans la base de données.</div><div class="ttdef"><b>Definition:</b> function-bd.c:202</div></div>
+<div class="ttc" id="afunction-bd_8h_html_a3f2d10defbb427880df651cc40918d55"><div class="ttname"><a href="function-bd_8h.html#a3f2d10defbb427880df651cc40918d55">createCommander</a></div><div class="ttdeci">void createCommander(MYSQL *db, User *user, Plat *plat)</div><div class="ttdoc">Fonction pour créer une commande dans la base de données pour un utilisateur et un plat donné</div><div class="ttdef"><b>Definition:</b> function-bd.c:84</div></div>
+<div class="ttc" id="afunction-bd_8h_html_a3fe9e952d0bb9ecf509b6d69f3be49d9"><div class="ttname"><a href="function-bd_8h.html#a3fe9e952d0bb9ecf509b6d69f3be49d9">updateEvent</a></div><div class="ttdeci">Event * updateEvent(MYSQL *db, Event *event)</div><div class="ttdoc">Met à jour un événement dans la base de données.</div><div class="ttdef"><b>Definition:</b> function-bd.c:158</div></div>
+<div class="ttc" id="afunction-bd_8h_html_a656eebee439bd5f57805341746465b64"><div class="ttname"><a href="function-bd_8h.html#a656eebee439bd5f57805341746465b64">createTicket</a></div><div class="ttdeci">Ticket * createTicket(MYSQL *db, Ticket *ticket, Event *event, User *user)</div><div class="ttdoc">Fonction pour créer un nouveau ticket dans la base de données pour un utilisateur et un événement don...</div><div class="ttdef"><b>Definition:</b> function-bd.c:57</div></div>
+<div class="ttc" id="afunction-bd_8h_html_a85cfa50a790ad4070a6e12846b111a61"><div class="ttname"><a href="function-bd_8h.html#a85cfa50a790ad4070a6e12846b111a61">createFilm</a></div><div class="ttdeci">Film * createFilm(MYSQL *db, Film *film, Session *session)</div><div class="ttdoc">Crée un nouveau film dans la base de données pour une session donnée.</div><div class="ttdef"><b>Definition:</b> function-bd.c:141</div></div>
+<div class="ttc" id="afunction-bd_8h_html_a8df4fb9e8e3dd4f7e5f5587e2d58b28d"><div class="ttname"><a href="function-bd_8h.html#a8df4fb9e8e3dd4f7e5f5587e2d58b28d">createPlace</a></div><div class="ttdeci">Place * createPlace(MYSQL *db, Place *place, Event *event)</div><div class="ttdoc">Fonction pour créer une nouvelle place dans la base de données pour un événement donné</div><div class="ttdef"><b>Definition:</b> function-bd.c:109</div></div>
+<div class="ttc" id="afunction-bd_8h_html_a98161e83bb97f93ff44200aced82e97e"><div class="ttname"><a href="function-bd_8h.html#a98161e83bb97f93ff44200aced82e97e">getFilmBySessionId</a></div><div class="ttdeci">Film ** getFilmBySessionId(MYSQL *db, Session *session)</div><div class="ttdoc">Récupère tous les films associés à une session donnée. Cette fonction se connecte à la base de donnée...</div><div class="ttdef"><b>Definition:</b> function-bd.c:305</div></div>
+<div class="ttc" id="afunction-bd_8h_html_aa1356d9f82b02a369219b7476d75250d"><div class="ttname"><a href="function-bd_8h.html#aa1356d9f82b02a369219b7476d75250d">getTicketByUserId</a></div><div class="ttdeci">Ticket * getTicketByUserId(MYSQL *db, User *user, Event **event)</div><div class="ttdoc">Récupère le ticket associé à un utilisateur et à un événement donnés dans la base de données.</div><div class="ttdef"><b>Definition:</b> function-bd.c:250</div></div>
+<div class="ttc" id="afunction-bd_8h_html_abfabec1ac7ace6cf06d46acaaff1ac00"><div class="ttname"><a href="function-bd_8h.html#abfabec1ac7ace6cf06d46acaaff1ac00">authentification</a></div><div class="ttdeci">bool authentification(MYSQL *db, User *user)</div><div class="ttdoc">Vérifie l'authentification d'un utilisateur. Cette fonction se connecte à la base de données via le p...</div><div class="ttdef"><b>Definition:</b> function-bd.c:332</div></div>
+<div class="ttc" id="afunction-bd_8h_html_ad85f2c9623c3c268cb933ec16a279598"><div class="ttname"><a href="function-bd_8h.html#ad85f2c9623c3c268cb933ec16a279598">createPlat</a></div><div class="ttdeci">Plat * createPlat(MYSQL *db, Plat *plat, Event *event)</div><div class="ttdoc">Fonction pour créer un nouveau plat dans la base de données pour un événement donné</div><div class="ttdef"><b>Definition:</b> function-bd.c:93</div></div>
+<div class="ttc" id="afunction-bd_8h_html_adad22c1542fdbf5eedc5cab0416d7c59"><div class="ttname"><a href="function-bd_8h.html#adad22c1542fdbf5eedc5cab0416d7c59">deleteEvent</a></div><div class="ttdeci">void deleteEvent(MYSQL *db, Event *event)</div><div class="ttdoc">Supprime un événement de la base de données.</div><div class="ttdef"><b>Definition:</b> function-bd.c:169</div></div>
+<div class="ttc" id="afunction-bd_8h_html_adaee5408f4f783ab52d66026baabb539"><div class="ttname"><a href="function-bd_8h.html#adaee5408f4f783ab52d66026baabb539">getPlaceByEventId</a></div><div class="ttdeci">Place ** getPlaceByEventId(MYSQL *db, Event *event)</div><div class="ttdoc">Récupère toutes les places associées à un événement donné dans la base de données.</div><div class="ttdef"><b>Definition:</b> function-bd.c:227</div></div>
+<div class="ttc" id="afunction-bd_8h_html_adbad9aa2a5a8e515f6bc7e563b614479"><div class="ttname"><a href="function-bd_8h.html#adbad9aa2a5a8e515f6bc7e563b614479">getPlatByEventId</a></div><div class="ttdeci">Plat ** getPlatByEventId(MYSQL *db, Event *event)</div><div class="ttdoc">Récupère tous les plats associés à un événement donné dans la base de données.</div><div class="ttdef"><b>Definition:</b> function-bd.c:178</div></div>
+<div class="ttc" id="afunction-bd_8h_html_ae9ca1372bc353c4f2b8513946c64f6e4"><div class="ttname"><a href="function-bd_8h.html#ae9ca1372bc353c4f2b8513946c64f6e4">createReservation</a></div><div class="ttdeci">void createReservation(MYSQL *db, User *user, Place *place)</div><div class="ttdoc">Fonction pour créer une réservation dans la base de données pour un utilisateur et une place donnée.</div><div class="ttdef"><b>Definition:</b> function-bd.c:75</div></div>
+<div class="ttc" id="afunction-bd_8h_html_afa452a74d102389df94105095a3c16b8"><div class="ttname"><a href="function-bd_8h.html#afa452a74d102389df94105095a3c16b8">getEvents</a></div><div class="ttdeci">Event * getEvents(MYSQL *db)</div><div class="ttdoc">Récupère tous les événements de la base de données.</div><div class="ttdef"><b>Definition:</b> function-bd.c:278</div></div>
+<div class="ttc" id="astruc_8h_html"><div class="ttname"><a href="struc_8h.html">struc.h</a></div></div>
+<div class="ttc" id="astructevent_html"><div class="ttname"><a href="structevent.html">event</a></div><div class="ttdoc">Structure représentant un événement Cette structure représente un événement et contient son identifia...</div><div class="ttdef"><b>Definition:</b> struc.h:74</div></div>
+<div class="ttc" id="astructfilm_html"><div class="ttname"><a href="structfilm.html">film</a></div><div class="ttdoc">Structure représentant un film Cette structure représente un film et contient son identifiant,...</div><div class="ttdef"><b>Definition:</b> struc.h:42</div></div>
+<div class="ttc" id="astructplace_html"><div class="ttname"><a href="structplace.html">place</a></div><div class="ttdoc">Structure représentant un emplacement.</div><div class="ttdef"><b>Definition:</b> struc.h:28</div></div>
+<div class="ttc" id="astructplat_html"><div class="ttname"><a href="structplat.html">plat</a></div><div class="ttdoc">Structure représentant un plat.</div><div class="ttdef"><b>Definition:</b> struc.h:101</div></div>
+<div class="ttc" id="astructsession_html"><div class="ttname"><a href="structsession.html">session</a></div><div class="ttdoc">Structure représentant une session.</div><div class="ttdef"><b>Definition:</b> struc.h:117</div></div>
+<div class="ttc" id="astructticket_html"><div class="ttname"><a href="structticket.html">ticket</a></div><div class="ttdoc">Structure représentant un billet Cette structure représente un billet et contient son identifiant,...</div><div class="ttdef"><b>Definition:</b> struc.h:58</div></div>
+<div class="ttc" id="astructuser_html"><div class="ttname"><a href="structuser.html">user</a></div><div class="ttdef"><b>Definition:</b> struc.h:10</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

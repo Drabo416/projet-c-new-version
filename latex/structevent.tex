@@ -1,0 +1,133 @@
+\hypertarget{structevent}{}\doxysection{Référence de la structure event}
+\label{structevent}\index{event@{event}}
+
+
+Structure représentant un événement Cette structure représente un événement et contient son identifiant, son type, son lieu, son label, sa date, ainsi que les sessions, emplacements, billets et plats associés à cet événement.  
+
+
+
+
+{\ttfamily \#include $<$struc.\+h$>$}
+
+
+
+Graphe de collaboration de event\+:
+% FIG 0
+\doxysubsection*{Attributs publics}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{structevent_a0a0a7d584539d22a52689acd33be40de}{id}}
+\item 
+char \mbox{\hyperlink{structevent_a85cb31e3168290349d1d413cd16d5e6d}{type}} \mbox{[}100\mbox{]}
+\item 
+char \mbox{\hyperlink{structevent_aff19ea99812a1bde1467424c296f74f2}{lieu}} \mbox{[}100\mbox{]}
+\item 
+char \mbox{\hyperlink{structevent_ab36786006bd272b70d17bdfb8fcdc939}{label}} \mbox{[}100\mbox{]}
+\item 
+char \mbox{\hyperlink{structevent_a3fa0d88aa80ecf108a74c45e8c0e71c5}{date\+Event}} \mbox{[}100\mbox{]}
+\item 
+int \mbox{\hyperlink{structevent_ae8856a5bc65b181c628a2b1e8d099e3b}{nbr\+Plat}}
+\item 
+int \mbox{\hyperlink{structevent_a6cf57131a88498d7a1e7b93ca42f78d1}{nbr\+Place}}
+\item 
+int \mbox{\hyperlink{structevent_a5020d2b3049bc0e1eb7c1ce7580108e1}{nbr\+Ticket}}
+\item 
+int \mbox{\hyperlink{structevent_a112c0cb45590a80a8df1385ca96e7213}{nbr\+Session}}
+\item 
+\mbox{\hyperlink{struc_8h_afbe8e138e1d2fd861f6c09f63954e927}{Session}} $\ast$$\ast$ \mbox{\hyperlink{structevent_a21f00b2c677c83207a1606f485b61afb}{session}}
+\item 
+\mbox{\hyperlink{struc_8h_ada528b7d640498194e7205985520646d}{Place}} $\ast$$\ast$ \mbox{\hyperlink{structevent_a62c1beb0db32f84b15b49c5dd3d41e57}{place}}
+\item 
+\mbox{\hyperlink{struc_8h_a2be6cff79d24682be3e84aa7b649d892}{Ticket}} $\ast$$\ast$ \mbox{\hyperlink{structevent_a91a92eacb3149a4ca8ac7d47f88dfb20}{ticket}}
+\item 
+\mbox{\hyperlink{struc_8h_a2c54d8dd00dce800770714245e8956a3}{Plat}} $\ast$$\ast$ \mbox{\hyperlink{structevent_a0d708b97f7f046cead95d7ef16b52f9e}{plat}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+Structure représentant un événement Cette structure représente un événement et contient son identifiant, son type, son lieu, son label, sa date, ainsi que les sessions, emplacements, billets et plats associés à cet événement. 
+
+\doxysubsection{Documentation des données membres}
+\mbox{\Hypertarget{structevent_a3fa0d88aa80ecf108a74c45e8c0e71c5}\label{structevent_a3fa0d88aa80ecf108a74c45e8c0e71c5}} 
+\index{event@{event}!dateEvent@{dateEvent}}
+\index{dateEvent@{dateEvent}!event@{event}}
+\doxysubsubsection{\texorpdfstring{dateEvent}{dateEvent}}
+{\footnotesize\ttfamily char event\+::date\+Event\mbox{[}100\mbox{]}}
+
+\mbox{\Hypertarget{structevent_a0a0a7d584539d22a52689acd33be40de}\label{structevent_a0a0a7d584539d22a52689acd33be40de}} 
+\index{event@{event}!id@{id}}
+\index{id@{id}!event@{event}}
+\doxysubsubsection{\texorpdfstring{id}{id}}
+{\footnotesize\ttfamily int event\+::id}
+
+\mbox{\Hypertarget{structevent_ab36786006bd272b70d17bdfb8fcdc939}\label{structevent_ab36786006bd272b70d17bdfb8fcdc939}} 
+\index{event@{event}!label@{label}}
+\index{label@{label}!event@{event}}
+\doxysubsubsection{\texorpdfstring{label}{label}}
+{\footnotesize\ttfamily char event\+::label\mbox{[}100\mbox{]}}
+
+\mbox{\Hypertarget{structevent_aff19ea99812a1bde1467424c296f74f2}\label{structevent_aff19ea99812a1bde1467424c296f74f2}} 
+\index{event@{event}!lieu@{lieu}}
+\index{lieu@{lieu}!event@{event}}
+\doxysubsubsection{\texorpdfstring{lieu}{lieu}}
+{\footnotesize\ttfamily char event\+::lieu\mbox{[}100\mbox{]}}
+
+\mbox{\Hypertarget{structevent_a6cf57131a88498d7a1e7b93ca42f78d1}\label{structevent_a6cf57131a88498d7a1e7b93ca42f78d1}} 
+\index{event@{event}!nbrPlace@{nbrPlace}}
+\index{nbrPlace@{nbrPlace}!event@{event}}
+\doxysubsubsection{\texorpdfstring{nbrPlace}{nbrPlace}}
+{\footnotesize\ttfamily int event\+::nbr\+Place}
+
+\mbox{\Hypertarget{structevent_ae8856a5bc65b181c628a2b1e8d099e3b}\label{structevent_ae8856a5bc65b181c628a2b1e8d099e3b}} 
+\index{event@{event}!nbrPlat@{nbrPlat}}
+\index{nbrPlat@{nbrPlat}!event@{event}}
+\doxysubsubsection{\texorpdfstring{nbrPlat}{nbrPlat}}
+{\footnotesize\ttfamily int event\+::nbr\+Plat}
+
+\mbox{\Hypertarget{structevent_a112c0cb45590a80a8df1385ca96e7213}\label{structevent_a112c0cb45590a80a8df1385ca96e7213}} 
+\index{event@{event}!nbrSession@{nbrSession}}
+\index{nbrSession@{nbrSession}!event@{event}}
+\doxysubsubsection{\texorpdfstring{nbrSession}{nbrSession}}
+{\footnotesize\ttfamily int event\+::nbr\+Session}
+
+Nombre de sessions associées à l\textquotesingle{}événement \mbox{\Hypertarget{structevent_a5020d2b3049bc0e1eb7c1ce7580108e1}\label{structevent_a5020d2b3049bc0e1eb7c1ce7580108e1}} 
+\index{event@{event}!nbrTicket@{nbrTicket}}
+\index{nbrTicket@{nbrTicket}!event@{event}}
+\doxysubsubsection{\texorpdfstring{nbrTicket}{nbrTicket}}
+{\footnotesize\ttfamily int event\+::nbr\+Ticket}
+
+\mbox{\Hypertarget{structevent_a62c1beb0db32f84b15b49c5dd3d41e57}\label{structevent_a62c1beb0db32f84b15b49c5dd3d41e57}} 
+\index{event@{event}!place@{place}}
+\index{place@{place}!event@{event}}
+\doxysubsubsection{\texorpdfstring{place}{place}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struc_8h_ada528b7d640498194e7205985520646d}{Place}}$\ast$$\ast$ event\+::place}
+
+Tableau de pointeurs vers les emplacements associés à l\textquotesingle{}événement \mbox{\Hypertarget{structevent_a0d708b97f7f046cead95d7ef16b52f9e}\label{structevent_a0d708b97f7f046cead95d7ef16b52f9e}} 
+\index{event@{event}!plat@{plat}}
+\index{plat@{plat}!event@{event}}
+\doxysubsubsection{\texorpdfstring{plat}{plat}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struc_8h_a2c54d8dd00dce800770714245e8956a3}{Plat}}$\ast$$\ast$ event\+::plat}
+
+\mbox{\Hypertarget{structevent_a21f00b2c677c83207a1606f485b61afb}\label{structevent_a21f00b2c677c83207a1606f485b61afb}} 
+\index{event@{event}!session@{session}}
+\index{session@{session}!event@{event}}
+\doxysubsubsection{\texorpdfstring{session}{session}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struc_8h_afbe8e138e1d2fd861f6c09f63954e927}{Session}}$\ast$$\ast$ event\+::session}
+
+Tableau de pointeurs vers les sessions associées à l\textquotesingle{}événement \mbox{\Hypertarget{structevent_a91a92eacb3149a4ca8ac7d47f88dfb20}\label{structevent_a91a92eacb3149a4ca8ac7d47f88dfb20}} 
+\index{event@{event}!ticket@{ticket}}
+\index{ticket@{ticket}!event@{event}}
+\doxysubsubsection{\texorpdfstring{ticket}{ticket}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struc_8h_a2be6cff79d24682be3e84aa7b649d892}{Ticket}}$\ast$$\ast$ event\+::ticket}
+
+Tableau de pointeurs vers les billets associés à l\textquotesingle{}événement \mbox{\Hypertarget{structevent_a85cb31e3168290349d1d413cd16d5e6d}\label{structevent_a85cb31e3168290349d1d413cd16d5e6d}} 
+\index{event@{event}!type@{type}}
+\index{type@{type}!event@{event}}
+\doxysubsubsection{\texorpdfstring{type}{type}}
+{\footnotesize\ttfamily char event\+::type\mbox{[}100\mbox{]}}
+
+
+
+La documentation de cette structure a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struc_8h}{struc.\+h}}\end{DoxyCompactItemize}

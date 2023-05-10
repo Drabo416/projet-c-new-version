@@ -1,0 +1,191 @@
+\hypertarget{main_8c}{}\doxysection{Référence du fichier main.\+c}
+\label{main_8c}\index{main.c@{main.c}}
+{\ttfamily \#include $<$mysql/mysql.\+h$>$}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$stddef.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}struc.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}saisie.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}function-\/bd.\+h\char`\"{}}\newline
+Graphe des dépendances par inclusion de main.\+c\+:
+% FIG 0
+\doxysubsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{main_8c_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}} ()
+\begin{DoxyCompactList}\small\item\em Fonction principale du programme. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Documentation des fonctions}
+\mbox{\Hypertarget{main_8c_ae66f6b31b5ad750f1fe042a706a4e3d4}\label{main_8c_ae66f6b31b5ad750f1fe042a706a4e3d4}} 
+\index{main.c@{main.c}!main@{main}}
+\index{main@{main}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Fonction principale du programme. 
+
+Cette fonction initialise la connexion à la base de données, et permet à l\textquotesingle{}utilisateur d\textquotesingle{}intéragir avec le programme en choisissant différentes options.
+
+\begin{DoxyReturn}{Renvoie}
+0 si le programme s\textquotesingle{}est exécuté correctement, une autre valeur sinon. 
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{18           \{}
+\DoxyCodeLine{19     MYSQL *db = mysql\_init(NULL);}
+\DoxyCodeLine{20     \textcolor{keywordflow}{if}(db==NULL)\{}
+\DoxyCodeLine{21         fprintf(stderr, \textcolor{stringliteral}{"{}\%s\(\backslash\)n"{}}, mysql\_error(db));}
+\DoxyCodeLine{22         exit(1);}
+\DoxyCodeLine{23     \}}
+\DoxyCodeLine{24     \textcolor{keywordflow}{if}(mysql\_real\_connect(db, \textcolor{stringliteral}{"{}localhost"{}}, \textcolor{stringliteral}{"{}mohamed"{}}, \textcolor{stringliteral}{"{}Drabo@mhd5985"{}}, \textcolor{stringliteral}{"{}event"{}}, 0, NULL, 0)==NULL)\{}
+\DoxyCodeLine{25         fprintf(stderr, \textcolor{stringliteral}{"{}\%s\(\backslash\)n"{}}, mysql\_error(db));}
+\DoxyCodeLine{26         mysql\_close(db);}
+\DoxyCodeLine{27         exit(1);}
+\DoxyCodeLine{28     \}}
+\DoxyCodeLine{29     \textcolor{keywordtype}{bool} isAuth = \textcolor{keyword}{false};}
+\DoxyCodeLine{30     \textcolor{keywordtype}{int} choix = 0;}
+\DoxyCodeLine{31     \textcolor{keywordtype}{char} section =\textcolor{charliteral}{'M'};}
+\DoxyCodeLine{32     \mbox{\hyperlink{structuser}{User}} *currentUser = NULL;}
+\DoxyCodeLine{33     \textcolor{keywordflow}{while} (\textcolor{keyword}{true}) \{}
+\DoxyCodeLine{34         \textcolor{keywordflow}{switch} (isAuth) \{}
+\DoxyCodeLine{35             \textcolor{keywordflow}{case} \textcolor{keyword}{false}:}
+\DoxyCodeLine{36                 \textcolor{keywordflow}{switch} (section) \{}
+\DoxyCodeLine{37                     \textcolor{keywordflow}{case} \textcolor{charliteral}{'L'}:}
+\DoxyCodeLine{38                         currentUser = (\mbox{\hyperlink{structuser}{User}}*) malloc(\textcolor{keyword}{sizeof}(\mbox{\hyperlink{structuser}{User}}));}
+\DoxyCodeLine{39                         printf(\textcolor{stringliteral}{"{}Nom d'utilisateur: "{}});}
+\DoxyCodeLine{40                         fgets(currentUser-\/>\mbox{\hyperlink{structuser_a75e4d75591faf8a0ae89d2d46e70cd67}{email}}, 100, stdin);}
+\DoxyCodeLine{41                         printf(\textcolor{stringliteral}{"{}Mot de passe: "{}});}
+\DoxyCodeLine{42                         fgets(currentUser-\/>\mbox{\hyperlink{structuser_a4786f90608b0050c6dbf96490ebb6eea}{password}}, 100, stdin);}
+\DoxyCodeLine{43                         currentUser-\/>\mbox{\hyperlink{structuser_a75e4d75591faf8a0ae89d2d46e70cd67}{email}}[strcspn(currentUser-\/>\mbox{\hyperlink{structuser_a75e4d75591faf8a0ae89d2d46e70cd67}{email}}, \textcolor{stringliteral}{"{}\(\backslash\)n"{}})] = 0;}
+\DoxyCodeLine{44                         currentUser-\/>\mbox{\hyperlink{structuser_a4786f90608b0050c6dbf96490ebb6eea}{password}}[strcspn(currentUser-\/>\mbox{\hyperlink{structuser_a4786f90608b0050c6dbf96490ebb6eea}{password}}, \textcolor{stringliteral}{"{}\(\backslash\)n"{}})] = 0;}
+\DoxyCodeLine{45                         \textcolor{keywordflow}{if} (\mbox{\hyperlink{function-bd_8c_abfabec1ac7ace6cf06d46acaaff1ac00}{authentification}}(db, currentUser)) \{}
+\DoxyCodeLine{46                             isAuth = \textcolor{keyword}{true};}
+\DoxyCodeLine{47                         \}\textcolor{keywordflow}{else}\{}
+\DoxyCodeLine{48                             printf(\textcolor{stringliteral}{"{}\(\backslash\)n*****Mot de passe ou le mail incorrecte\(\backslash\)n\(\backslash\)n"{}});}
+\DoxyCodeLine{49                         \}}
+\DoxyCodeLine{50                         \textcolor{keywordflow}{break};}
+\DoxyCodeLine{51                 \}}
+\DoxyCodeLine{52                 \textcolor{keywordflow}{if}(isAuth)\{}
+\DoxyCodeLine{53                     \textcolor{keywordflow}{break};}
+\DoxyCodeLine{54                 \}}
+\DoxyCodeLine{55                 printf(\textcolor{stringliteral}{"{}Bienvenue dans le système. Que souhaitez-\/vous faire ?\(\backslash\)n"{}});}
+\DoxyCodeLine{56                 printf(\textcolor{stringliteral}{"{}1. Se connecter\(\backslash\)n"{}});}
+\DoxyCodeLine{57                 printf(\textcolor{stringliteral}{"{}2. S'inscrire\(\backslash\)n"{}});}
+\DoxyCodeLine{58                 printf(\textcolor{stringliteral}{"{}Votre choix: "{}});}
+\DoxyCodeLine{59                 scanf(\textcolor{stringliteral}{"{}\%d"{}}, \&choix);}
+\DoxyCodeLine{60                 getchar();}
+\DoxyCodeLine{61                 \textcolor{keywordflow}{switch} (choix) \{}
+\DoxyCodeLine{62                     \textcolor{keywordflow}{case} 1:}
+\DoxyCodeLine{63                         section = \textcolor{charliteral}{'L'};}
+\DoxyCodeLine{64                         \textcolor{keywordflow}{break};}
+\DoxyCodeLine{65                     \textcolor{keywordflow}{case} 2:}
+\DoxyCodeLine{66                         currentUser = \mbox{\hyperlink{function-bd_8c_a3c02e2ad6109da33dbb21de526f4b7b4}{createUser}}(db, \mbox{\hyperlink{saisie_8c_a3d9e55f2d789dced32e2a94d3f233ee1}{SaisieUser}}());}
+\DoxyCodeLine{67                         \textcolor{keywordflow}{if} (currentUser != NULL) \{}
+\DoxyCodeLine{68                             isAuth = \textcolor{keyword}{true};}
+\DoxyCodeLine{69                         \}}
+\DoxyCodeLine{70                         \textcolor{keywordflow}{break};}
+\DoxyCodeLine{71                 \}}
+\DoxyCodeLine{72                 \textcolor{keywordflow}{break};}
+\DoxyCodeLine{73             \textcolor{keywordflow}{case} \textcolor{keyword}{true}:}
+\DoxyCodeLine{74                 printf(\textcolor{stringliteral}{"{}Bienvenue dans le système. Que souhaitez-\/vous faire ?\(\backslash\)n"{}});}
+\DoxyCodeLine{75                 printf(\textcolor{stringliteral}{"{}1. Liste des événements\(\backslash\)n"{}});}
+\DoxyCodeLine{76                 printf(\textcolor{stringliteral}{"{}2. Liste de mes événements\(\backslash\)n"{}});}
+\DoxyCodeLine{77                 printf(\textcolor{stringliteral}{"{}3. Créer un événement\(\backslash\)n"{}});}
+\DoxyCodeLine{78                 printf(\textcolor{stringliteral}{"{}Votre choix: "{}});}
+\DoxyCodeLine{79                 scanf(\textcolor{stringliteral}{"{}\%d"{}}, \&choix);}
+\DoxyCodeLine{80                 getchar();}
+\DoxyCodeLine{81                 \textcolor{keywordflow}{switch} (choix) \{}
+\DoxyCodeLine{82                     \textcolor{keywordflow}{case} 1:}
+\DoxyCodeLine{83                         section=\textcolor{charliteral}{'E'};}
+\DoxyCodeLine{84                         \mbox{\hyperlink{structevent}{Event}} * \textcolor{keyword}{event} = \mbox{\hyperlink{function-bd_8c_ae3c6cfaad3a60fe9b3a8585f4d68d1a8}{getEvents}}(db);}
+\DoxyCodeLine{85                         \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i=0; i<100; i++)\{}
+\DoxyCodeLine{86                             \textcolor{keywordflow}{if}(\mbox{\hyperlink{structevent}{event}}[i].\textcolor{keywordtype}{id})\{}
+\DoxyCodeLine{87                                 printf(\textcolor{stringliteral}{"{}\(\backslash\)n\(\backslash\)nEvenement :\%d\(\backslash\)n"{}}, \mbox{\hyperlink{structevent}{event}}[i].\textcolor{keywordtype}{id});}
+\DoxyCodeLine{88                                 \mbox{\hyperlink{function_8c_ab713552cfd027e60a8e16368280d144c}{printEvent}}(\&\mbox{\hyperlink{structevent}{event}}[i]);}
+\DoxyCodeLine{89                             \}}
+\DoxyCodeLine{90                         \}}
+\DoxyCodeLine{91                         free(\mbox{\hyperlink{structevent}{event}});}
+\DoxyCodeLine{92                         \textcolor{keywordflow}{break};}
+\DoxyCodeLine{93                     \textcolor{keywordflow}{case} 2:}
+\DoxyCodeLine{94                         section=\textcolor{charliteral}{'M'};}
+\DoxyCodeLine{95                         \textcolor{comment}{// Récupération des événements de l'utilisateur courant}}
+\DoxyCodeLine{96                         \textcolor{comment}{// Event* myEvents = getMyEvents(db, currentUser);}}
+\DoxyCodeLine{97                         \textcolor{comment}{// if (myEvents == NULL) \{}}
+\DoxyCodeLine{98                         \textcolor{comment}{//     printf("{}Vous n'avez aucun événement enregistré.\(\backslash\)n"{});}}
+\DoxyCodeLine{99                         \textcolor{comment}{// \} else \{}}
+\DoxyCodeLine{100                         \textcolor{comment}{//     // Affichage des événements de l'utilisateur courant}}
+\DoxyCodeLine{101                         \textcolor{comment}{//     for(int i=0; i<100; i++)\{}}
+\DoxyCodeLine{102                         \textcolor{comment}{//         if(myEvents[i].id)\{}}
+\DoxyCodeLine{103                         \textcolor{comment}{//             printf("{}\(\backslash\)n\(\backslash\)nEvenement :\%d\(\backslash\)n"{}, myEvents[i].id);}}
+\DoxyCodeLine{104                         \textcolor{comment}{//             printEvent(\&myEvents[i]);}}
+\DoxyCodeLine{105                         \textcolor{comment}{//         \}}}
+\DoxyCodeLine{106                         \textcolor{comment}{//     \}}}
+\DoxyCodeLine{107                         \textcolor{comment}{//     free(myEvents);}}
+\DoxyCodeLine{108                         \textcolor{comment}{// \}}}
+\DoxyCodeLine{109                         \textcolor{keywordflow}{break};}
+\DoxyCodeLine{110                     \textcolor{keywordflow}{case} 3:}
+\DoxyCodeLine{111                         section=\textcolor{charliteral}{'C'};}
+\DoxyCodeLine{112                         \textcolor{comment}{// Création d'un événement}}
+\DoxyCodeLine{113                         \mbox{\hyperlink{structevent}{Event}}* newEvent = \mbox{\hyperlink{function-bd_8c_a795bf925a246abd3a1984e7dc733db7c}{createEvent}}(db, \mbox{\hyperlink{saisie_8c_a901b44dc1fc884c2939f17ea53275474}{SaisieEvent}}());}
+\DoxyCodeLine{114                         \textcolor{keywordflow}{if} (newEvent == NULL) \{}
+\DoxyCodeLine{115                             printf(\textcolor{stringliteral}{"{}Une erreur est survenue lors de la création de l'événement.\(\backslash\)n"{}});}
+\DoxyCodeLine{116                         \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{117                             printf(\textcolor{stringliteral}{"{}L'événement a été créé avec succès !\(\backslash\)n"{}});}
+\DoxyCodeLine{118                             printf(\textcolor{stringliteral}{"{}Que souhaitez-\/vous faire maintenant ?\(\backslash\)n"{}});}
+\DoxyCodeLine{119                             printf(\textcolor{stringliteral}{"{}1. Afficher la liste de mes événements\(\backslash\)n"{}});}
+\DoxyCodeLine{120                             printf(\textcolor{stringliteral}{"{}2. Créer une session\(\backslash\)n"{}});}
+\DoxyCodeLine{121                             printf(\textcolor{stringliteral}{"{}3. Ajouter une place à l'événement\(\backslash\)n"{}});}
+\DoxyCodeLine{122                         printf(\textcolor{stringliteral}{"{}4. Ajouter un plat à l'événement\(\backslash\)n"{}});}
+\DoxyCodeLine{123                         printf(\textcolor{stringliteral}{"{}5. Retourner au menu principal\(\backslash\)n"{}});}
+\DoxyCodeLine{124                         printf(\textcolor{stringliteral}{"{}Votre choix: "{}});}
+\DoxyCodeLine{125                         scanf(\textcolor{stringliteral}{"{}\%d"{}}, \&choix);}
+\DoxyCodeLine{126                         getchar();}
+\DoxyCodeLine{127                         \textcolor{keywordflow}{switch} (choix) \{}
+\DoxyCodeLine{128                             \textcolor{keywordflow}{case} 1:}
+\DoxyCodeLine{129                                 section = \textcolor{charliteral}{'M'};}
+\DoxyCodeLine{130                                 \textcolor{keywordflow}{break};}
+\DoxyCodeLine{131                             \textcolor{keywordflow}{case} 2:}
+\DoxyCodeLine{132                                 section = \textcolor{charliteral}{'S'};}
+\DoxyCodeLine{133                                 \textcolor{comment}{// Création d'une session}}
+\DoxyCodeLine{134                                 \mbox{\hyperlink{structsession}{Session}}* newSession = \mbox{\hyperlink{function-bd_8c_a0b359274b0442de3df9d4013ed6c4d1f}{createSession}}(db, \mbox{\hyperlink{saisie_8c_af2154b13a7d0aaabfc243d0044db4160}{saisieSession}}(), newEvent);}
+\DoxyCodeLine{135                                 \textcolor{keywordflow}{if} (newSession == NULL) \{}
+\DoxyCodeLine{136                                     printf(\textcolor{stringliteral}{"{}Une erreur est survenue lors de la création de la session.\(\backslash\)n"{}});}
+\DoxyCodeLine{137                                 \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{138                                     printf(\textcolor{stringliteral}{"{}La session a été créée avec succès !\(\backslash\)n"{}});}
+\DoxyCodeLine{139                                 \}}
+\DoxyCodeLine{140                                 \textcolor{keywordflow}{break};}
+\DoxyCodeLine{141                             \textcolor{keywordflow}{case} 3:}
+\DoxyCodeLine{142                                 section = \textcolor{charliteral}{'P'};}
+\DoxyCodeLine{143                                 \textcolor{comment}{// Ajout d'une place à l'événement}}
+\DoxyCodeLine{144                                 \mbox{\hyperlink{structplace}{Place}}* newPlace = \mbox{\hyperlink{saisie_8c_a4ce7c5807a9dfbe5a8f94e204239edbe}{saisiePlace}}();}
+\DoxyCodeLine{145                                 \textcolor{keywordflow}{if} (newPlace == NULL) \{}
+\DoxyCodeLine{146                                     printf(\textcolor{stringliteral}{"{}Une erreur est survenue lors de la création de la place.\(\backslash\)n"{}});}
+\DoxyCodeLine{147                                 \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{148                                     \mbox{\hyperlink{function-bd_8c_a8df4fb9e8e3dd4f7e5f5587e2d58b28d}{createPlace}}(db, newPlace, newEvent);}
+\DoxyCodeLine{149                                     printf(\textcolor{stringliteral}{"{}La place a été ajoutée avec succès à l'événement !\(\backslash\)n"{}});}
+\DoxyCodeLine{150                                 \}}
+\DoxyCodeLine{151                                 \textcolor{keywordflow}{break};}
+\DoxyCodeLine{152                             \textcolor{keywordflow}{case} 4:}
+\DoxyCodeLine{153                                 section = \textcolor{charliteral}{'T'};}
+\DoxyCodeLine{154                                 \textcolor{comment}{// Ajout d'un plat à l'événement}}
+\DoxyCodeLine{155                                 \mbox{\hyperlink{structplat}{Plat}}* newPlat = \mbox{\hyperlink{function-bd_8c_ad85f2c9623c3c268cb933ec16a279598}{createPlat}}(db, \mbox{\hyperlink{saisie_8c_a140a953bf6cf999e50a33f191bd4c9e6}{saisiePlat}}(), newEvent);}
+\DoxyCodeLine{156                                 \textcolor{keywordflow}{if} (newPlat == NULL) \{}
+\DoxyCodeLine{157                                     printf(\textcolor{stringliteral}{"{}Une erreur est survenue lors de la création du plat.\(\backslash\)n"{}});}
+\DoxyCodeLine{158                                 \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{159                                     printf(\textcolor{stringliteral}{"{}Le plat a été ajouté avec succès à l'événement !\(\backslash\)n"{}});}
+\DoxyCodeLine{160                                 \}}
+\DoxyCodeLine{161                                 \textcolor{keywordflow}{break};}
+\DoxyCodeLine{162                             \textcolor{keywordflow}{case} 5:}
+\DoxyCodeLine{163                                 section = \textcolor{charliteral}{'P'};}
+\DoxyCodeLine{164                                 \textcolor{keywordflow}{break};}
+\DoxyCodeLine{165                         \}}
+\DoxyCodeLine{166     \}}
+\DoxyCodeLine{167     \textcolor{keywordflow}{break};}
+\DoxyCodeLine{168                 \}}
+\DoxyCodeLine{169 \}}
+\DoxyCodeLine{170 \}\}}
+
+\end{DoxyCode}

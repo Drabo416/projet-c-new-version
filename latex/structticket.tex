@@ -1,0 +1,69 @@
+\hypertarget{structticket}{}\doxysection{Référence de la structure ticket}
+\label{structticket}\index{ticket@{ticket}}
+
+
+Structure représentant un billet Cette structure représente un billet et contient son identifiant, son numéro, sa date d\textquotesingle{}émission, l\textquotesingle{}utilisateur qui l\textquotesingle{}a acheté ainsi que l\textquotesingle{}événement auquel il est associé.  
+
+
+
+
+{\ttfamily \#include $<$struc.\+h$>$}
+
+
+
+Graphe de collaboration de ticket\+:
+% FIG 0
+\doxysubsection*{Attributs publics}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{structticket_ad3cd21ffd06c78b3260dfae33ddc4f93}{id}}
+\item 
+int \mbox{\hyperlink{structticket_ae4e090144335b1317a1512a5bc55ca52}{number}}
+\item 
+char \mbox{\hyperlink{structticket_aacfe1850ba8e8d538550857fb6a7862c}{date\+Ticket}} \mbox{[}100\mbox{]}
+\item 
+\mbox{\hyperlink{struc_8h_af0288466725cf045591f80a7878cd7f2}{User}} $\ast$ \mbox{\hyperlink{structticket_aced945b3176bf99ac7f05d5c83c3d577}{user}}
+\item 
+\mbox{\hyperlink{struc_8h_ab2f494a6b60c0f52e6c2a96fbe4d010c}{Event}} $\ast$ \mbox{\hyperlink{structticket_a0d7972a4819d3457b28aa9a283723ec4}{event}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+Structure représentant un billet Cette structure représente un billet et contient son identifiant, son numéro, sa date d\textquotesingle{}émission, l\textquotesingle{}utilisateur qui l\textquotesingle{}a acheté ainsi que l\textquotesingle{}événement auquel il est associé. 
+
+\doxysubsection{Documentation des données membres}
+\mbox{\Hypertarget{structticket_aacfe1850ba8e8d538550857fb6a7862c}\label{structticket_aacfe1850ba8e8d538550857fb6a7862c}} 
+\index{ticket@{ticket}!dateTicket@{dateTicket}}
+\index{dateTicket@{dateTicket}!ticket@{ticket}}
+\doxysubsubsection{\texorpdfstring{dateTicket}{dateTicket}}
+{\footnotesize\ttfamily char ticket\+::date\+Ticket\mbox{[}100\mbox{]}}
+
+\mbox{\Hypertarget{structticket_a0d7972a4819d3457b28aa9a283723ec4}\label{structticket_a0d7972a4819d3457b28aa9a283723ec4}} 
+\index{ticket@{ticket}!event@{event}}
+\index{event@{event}!ticket@{ticket}}
+\doxysubsubsection{\texorpdfstring{event}{event}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struc_8h_ab2f494a6b60c0f52e6c2a96fbe4d010c}{Event}}$\ast$ ticket\+::event}
+
+\mbox{\Hypertarget{structticket_ad3cd21ffd06c78b3260dfae33ddc4f93}\label{structticket_ad3cd21ffd06c78b3260dfae33ddc4f93}} 
+\index{ticket@{ticket}!id@{id}}
+\index{id@{id}!ticket@{ticket}}
+\doxysubsubsection{\texorpdfstring{id}{id}}
+{\footnotesize\ttfamily int ticket\+::id}
+
+\mbox{\Hypertarget{structticket_ae4e090144335b1317a1512a5bc55ca52}\label{structticket_ae4e090144335b1317a1512a5bc55ca52}} 
+\index{ticket@{ticket}!number@{number}}
+\index{number@{number}!ticket@{ticket}}
+\doxysubsubsection{\texorpdfstring{number}{number}}
+{\footnotesize\ttfamily int ticket\+::number}
+
+\mbox{\Hypertarget{structticket_aced945b3176bf99ac7f05d5c83c3d577}\label{structticket_aced945b3176bf99ac7f05d5c83c3d577}} 
+\index{ticket@{ticket}!user@{user}}
+\index{user@{user}!ticket@{ticket}}
+\doxysubsubsection{\texorpdfstring{user}{user}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struc_8h_af0288466725cf045591f80a7878cd7f2}{User}}$\ast$ ticket\+::user}
+
+
+
+La documentation de cette structure a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struc_8h}{struc.\+h}}\end{DoxyCompactItemize}

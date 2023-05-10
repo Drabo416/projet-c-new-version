@@ -6,6 +6,15 @@
 #include "saisie.h"
 #include "function-bd.h"
 #include <string.h>
+/**
+ * @brief Fonction principale du programme.
+ *
+ * Cette fonction initialise la connexion à la base de données, et permet à
+ * l'utilisateur d'intéragir avec le programme en choisissant différentes
+ * options.
+ *
+ * @return 0 si le programme s'est exécuté correctement, une autre valeur sinon.
+ */
 int main(){
     MYSQL *db = mysql_init(NULL);
     if(db==NULL){
@@ -35,6 +44,8 @@ int main(){
                         currentUser->password[strcspn(currentUser->password, "\n")] = 0;
                         if (authentification(db, currentUser)) {
                             isAuth = true;
+                        }else{
+                            printf("\n*****Mot de passe ou le mail incorrecte\n\n");
                         }
                         break;
                 }

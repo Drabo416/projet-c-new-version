@@ -1,0 +1,79 @@
+\hypertarget{structsession}{}\doxysection{Référence de la structure session}
+\label{structsession}\index{session@{session}}
+
+
+Structure représentant une session.  
+
+
+
+
+{\ttfamily \#include $<$struc.\+h$>$}
+
+
+
+Graphe de collaboration de session\+:
+% FIG 0
+\doxysubsection*{Attributs publics}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{structsession_a29ffa9635cf0b2dde142ffeb835c2f43}{id}}
+\item 
+int \mbox{\hyperlink{structsession_a00625422ccb11ee71cd1c60d4df7462e}{nbr\+Film}}
+\item 
+char \mbox{\hyperlink{structsession_a7d8f9b7d3450cd684ba092406e92bddd}{name}} \mbox{[}100\mbox{]}
+\item 
+char \mbox{\hyperlink{structsession_a1b8098084c00a0fc14a81a08e477a8b9}{date\+Session}} \mbox{[}100\mbox{]}
+\item 
+\mbox{\hyperlink{struc_8h_ab2f494a6b60c0f52e6c2a96fbe4d010c}{Event}} $\ast$ \mbox{\hyperlink{structsession_acdc3ec3972db9a769d2dac93e12bc839}{event}}
+\item 
+\mbox{\hyperlink{struc_8h_a7be70f7244cbc0812a720373117ac45e}{Film}} $\ast$$\ast$ \mbox{\hyperlink{structsession_a95d674921c109d066723cb9c54b1a73b}{film}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+Structure représentant une session. 
+
+Cette structure représente une session et contient son identifiant, le nombre de films, le nom de la session, la date de la session, ainsi que l\textquotesingle{}événement et les films associés à cette session. 
+
+\doxysubsection{Documentation des données membres}
+\mbox{\Hypertarget{structsession_a1b8098084c00a0fc14a81a08e477a8b9}\label{structsession_a1b8098084c00a0fc14a81a08e477a8b9}} 
+\index{session@{session}!dateSession@{dateSession}}
+\index{dateSession@{dateSession}!session@{session}}
+\doxysubsubsection{\texorpdfstring{dateSession}{dateSession}}
+{\footnotesize\ttfamily char session\+::date\+Session\mbox{[}100\mbox{]}}
+
+La date de la session \mbox{\Hypertarget{structsession_acdc3ec3972db9a769d2dac93e12bc839}\label{structsession_acdc3ec3972db9a769d2dac93e12bc839}} 
+\index{session@{session}!event@{event}}
+\index{event@{event}!session@{session}}
+\doxysubsubsection{\texorpdfstring{event}{event}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struc_8h_ab2f494a6b60c0f52e6c2a96fbe4d010c}{Event}}$\ast$ session\+::event}
+
+L\textquotesingle{}événement associé à cette session \mbox{\Hypertarget{structsession_a95d674921c109d066723cb9c54b1a73b}\label{structsession_a95d674921c109d066723cb9c54b1a73b}} 
+\index{session@{session}!film@{film}}
+\index{film@{film}!session@{session}}
+\doxysubsubsection{\texorpdfstring{film}{film}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struc_8h_a7be70f7244cbc0812a720373117ac45e}{Film}}$\ast$$\ast$ session\+::film}
+
+Les films associés à cette session \mbox{\Hypertarget{structsession_a29ffa9635cf0b2dde142ffeb835c2f43}\label{structsession_a29ffa9635cf0b2dde142ffeb835c2f43}} 
+\index{session@{session}!id@{id}}
+\index{id@{id}!session@{session}}
+\doxysubsubsection{\texorpdfstring{id}{id}}
+{\footnotesize\ttfamily int session\+::id}
+
+L\textquotesingle{}identifiant de la session \mbox{\Hypertarget{structsession_a7d8f9b7d3450cd684ba092406e92bddd}\label{structsession_a7d8f9b7d3450cd684ba092406e92bddd}} 
+\index{session@{session}!name@{name}}
+\index{name@{name}!session@{session}}
+\doxysubsubsection{\texorpdfstring{name}{name}}
+{\footnotesize\ttfamily char session\+::name\mbox{[}100\mbox{]}}
+
+Le nom de la session \mbox{\Hypertarget{structsession_a00625422ccb11ee71cd1c60d4df7462e}\label{structsession_a00625422ccb11ee71cd1c60d4df7462e}} 
+\index{session@{session}!nbrFilm@{nbrFilm}}
+\index{nbrFilm@{nbrFilm}!session@{session}}
+\doxysubsubsection{\texorpdfstring{nbrFilm}{nbrFilm}}
+{\footnotesize\ttfamily int session\+::nbr\+Film}
+
+Le nombre de films de la session 
+
+La documentation de cette structure a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struc_8h}{struc.\+h}}\end{DoxyCompactItemize}

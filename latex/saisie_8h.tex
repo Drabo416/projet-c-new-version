@@ -1,0 +1,247 @@
+\hypertarget{saisie_8h}{}\doxysection{Référence du fichier saisie.\+h}
+\label{saisie_8h}\index{saisie.h@{saisie.h}}
+{\ttfamily \#include \char`\"{}struc.\+h\char`\"{}}\newline
+Graphe des dépendances par inclusion de saisie.\+h\+:
+% FIG 0
+Ce graphe montre quels fichiers incluent directement ou indirectement ce fichier \+:
+% FIG 1
+\doxysubsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struc_8h_af0288466725cf045591f80a7878cd7f2}{User}} $\ast$ \mbox{\hyperlink{saisie_8h_a3d9e55f2d789dced32e2a94d3f233ee1}{Saisie\+User}} ()
+\begin{DoxyCompactList}\small\item\em Saisit les informations d\textquotesingle{}un utilisateur à partir de l\textquotesingle{}entrée de l\textquotesingle{}utilisateur. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struc_8h_ab2f494a6b60c0f52e6c2a96fbe4d010c}{Event}} $\ast$ \mbox{\hyperlink{saisie_8h_a901b44dc1fc884c2939f17ea53275474}{Saisie\+Event}} ()
+\begin{DoxyCompactList}\small\item\em Saisit les informations d\textquotesingle{}un événement à partir de l\textquotesingle{}entrée de l\textquotesingle{}utilisateur. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struc_8h_a2c54d8dd00dce800770714245e8956a3}{Plat}} $\ast$ \mbox{\hyperlink{saisie_8h_a140a953bf6cf999e50a33f191bd4c9e6}{saisie\+Plat}} ()
+\begin{DoxyCompactList}\small\item\em Saisit les informations d\textquotesingle{}un plat à partir de l\textquotesingle{}entrée de l\textquotesingle{}utilisateur. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struc_8h_afbe8e138e1d2fd861f6c09f63954e927}{Session}} $\ast$ \mbox{\hyperlink{saisie_8h_af2154b13a7d0aaabfc243d0044db4160}{saisie\+Session}} ()
+\begin{DoxyCompactList}\small\item\em Saisit les informations d\textquotesingle{}une session à partir de l\textquotesingle{}entrée de l\textquotesingle{}utilisateur. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struc_8h_a7be70f7244cbc0812a720373117ac45e}{Film}} $\ast$ \mbox{\hyperlink{saisie_8h_a3a0d3cb6ed40fe4c1effadbfec278a72}{saisie\+Film}} ()
+\begin{DoxyCompactList}\small\item\em Saisit les informations d\textquotesingle{}un film à partir de l\textquotesingle{}entrée de l\textquotesingle{}utilisateur. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struc_8h_ada528b7d640498194e7205985520646d}{Place}} $\ast$ \mbox{\hyperlink{saisie_8h_a4ce7c5807a9dfbe5a8f94e204239edbe}{saisie\+Place}} ()
+\begin{DoxyCompactList}\small\item\em Saisit les informations d\textquotesingle{}une place à partir de l\textquotesingle{}entrée de l\textquotesingle{}utilisateur. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struc_8h_a2be6cff79d24682be3e84aa7b649d892}{Ticket}} $\ast$ \mbox{\hyperlink{saisie_8h_a17dcb9f10d7440827b11e6d19840c3b5}{saisie\+Ticket}} ()
+\begin{DoxyCompactList}\small\item\em Saisit les informations d\textquotesingle{}un ticket à partir de l\textquotesingle{}entrée de l\textquotesingle{}utilisateur. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Documentation des fonctions}
+\mbox{\Hypertarget{saisie_8h_a901b44dc1fc884c2939f17ea53275474}\label{saisie_8h_a901b44dc1fc884c2939f17ea53275474}} 
+\index{saisie.h@{saisie.h}!SaisieEvent@{SaisieEvent}}
+\index{SaisieEvent@{SaisieEvent}!saisie.h@{saisie.h}}
+\doxysubsubsection{\texorpdfstring{SaisieEvent()}{SaisieEvent()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struc_8h_ab2f494a6b60c0f52e6c2a96fbe4d010c}{Event}}$\ast$ Saisie\+Event (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Saisit les informations d\textquotesingle{}un événement à partir de l\textquotesingle{}entrée de l\textquotesingle{}utilisateur. 
+
+\begin{DoxyReturn}{Renvoie}
+Un pointeur vers l\textquotesingle{}objet Event créé. 
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{33                      \{}
+\DoxyCodeLine{34     printf(\textcolor{stringliteral}{"{}Création de l'événement\(\backslash\)n"{}});}
+\DoxyCodeLine{35     \mbox{\hyperlink{structevent}{Event}} *\textcolor{keyword}{event} = malloc(\textcolor{keyword}{sizeof}(\mbox{\hyperlink{structevent}{Event}}));}
+\DoxyCodeLine{36     }
+\DoxyCodeLine{37     printf(\textcolor{stringliteral}{"{}Type d'événement : "{}});}
+\DoxyCodeLine{38     scanf(\textcolor{stringliteral}{"{}\%s"{}}, \mbox{\hyperlink{structevent}{event}}-\/>\mbox{\hyperlink{structevent_a85cb31e3168290349d1d413cd16d5e6d}{type}});}
+\DoxyCodeLine{39     \textcolor{keywordflow}{while}(getchar() != \textcolor{charliteral}{'\(\backslash\)n'});}
+\DoxyCodeLine{40     }
+\DoxyCodeLine{41     printf(\textcolor{stringliteral}{"{}Lieu : "{}});}
+\DoxyCodeLine{42     scanf(\textcolor{stringliteral}{"{}\%s"{}}, \mbox{\hyperlink{structevent}{event}}-\/>\mbox{\hyperlink{structevent_aff19ea99812a1bde1467424c296f74f2}{lieu}});}
+\DoxyCodeLine{43     \textcolor{keywordflow}{while}(getchar() != \textcolor{charliteral}{'\(\backslash\)n'});}
+\DoxyCodeLine{44     }
+\DoxyCodeLine{45     printf(\textcolor{stringliteral}{"{}Label : "{}});}
+\DoxyCodeLine{46     scanf(\textcolor{stringliteral}{"{}\%s"{}}, \mbox{\hyperlink{structevent}{event}}-\/>\mbox{\hyperlink{structevent_ab36786006bd272b70d17bdfb8fcdc939}{label}});}
+\DoxyCodeLine{47     \textcolor{keywordflow}{while}(getchar() != \textcolor{charliteral}{'\(\backslash\)n'});}
+\DoxyCodeLine{48     }
+\DoxyCodeLine{49     printf(\textcolor{stringliteral}{"{}Date de l'événement(AAAA-\/MM-\/JJ) : "{}});}
+\DoxyCodeLine{50     scanf(\textcolor{stringliteral}{"{}\%s"{}}, \mbox{\hyperlink{structevent}{event}}-\/>\mbox{\hyperlink{structevent_a3fa0d88aa80ecf108a74c45e8c0e71c5}{dateEvent}});}
+\DoxyCodeLine{51     \textcolor{keywordflow}{while}(getchar() != \textcolor{charliteral}{'\(\backslash\)n'});}
+\DoxyCodeLine{52     }
+\DoxyCodeLine{53     \textcolor{keyword}{event}-\/>id=-\/1;}
+\DoxyCodeLine{54     \textcolor{keyword}{event}-\/>nbrPlat=0;}
+\DoxyCodeLine{55     \textcolor{keywordflow}{return} \mbox{\hyperlink{structevent}{event}};}
+\DoxyCodeLine{56 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{saisie_8h_a3a0d3cb6ed40fe4c1effadbfec278a72}\label{saisie_8h_a3a0d3cb6ed40fe4c1effadbfec278a72}} 
+\index{saisie.h@{saisie.h}!saisieFilm@{saisieFilm}}
+\index{saisieFilm@{saisieFilm}!saisie.h@{saisie.h}}
+\doxysubsubsection{\texorpdfstring{saisieFilm()}{saisieFilm()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struc_8h_a7be70f7244cbc0812a720373117ac45e}{Film}}$\ast$ saisie\+Film (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Saisit les informations d\textquotesingle{}un film à partir de l\textquotesingle{}entrée de l\textquotesingle{}utilisateur. 
+
+\begin{DoxyReturn}{Renvoie}
+Un pointeur vers l\textquotesingle{}objet Film créé. 
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{78                   \{}
+\DoxyCodeLine{79     printf(\textcolor{stringliteral}{"{}Création d'un film\(\backslash\)n"{}});}
+\DoxyCodeLine{80     \mbox{\hyperlink{structfilm}{Film}} *\mbox{\hyperlink{structfilm}{film}} = malloc(\textcolor{keyword}{sizeof}(\mbox{\hyperlink{structfilm}{Film}}));}
+\DoxyCodeLine{81     printf(\textcolor{stringliteral}{"{}Titre : "{}});}
+\DoxyCodeLine{82     scanf(\textcolor{stringliteral}{"{}\%s"{}}, \mbox{\hyperlink{structfilm}{film}}-\/>\mbox{\hyperlink{structfilm_a4acbafdef3f4db6c506188b57b9aa1e6}{titre}});}
+\DoxyCodeLine{83     printf(\textcolor{stringliteral}{"{}Description : "{}});}
+\DoxyCodeLine{84     scanf(\textcolor{stringliteral}{"{}\%s"{}}, \mbox{\hyperlink{structfilm}{film}}-\/>\mbox{\hyperlink{structfilm_a956c048b78895d1e6b88a9f9ec0fd637}{description}});}
+\DoxyCodeLine{85     printf(\textcolor{stringliteral}{"{}Auteur : "{}});}
+\DoxyCodeLine{86     scanf(\textcolor{stringliteral}{"{}\%s"{}}, \mbox{\hyperlink{structfilm}{film}}-\/>\mbox{\hyperlink{structfilm_a1b51f780a844771f2ebd8e117bf0cdff}{auteur}});}
+\DoxyCodeLine{87     \mbox{\hyperlink{structfilm}{film}}-\/>\mbox{\hyperlink{structfilm_a3573647ae7de9da9744bc8e1ca8618b4}{session}} = NULL;}
+\DoxyCodeLine{88     \textcolor{keywordflow}{return} \mbox{\hyperlink{structfilm}{film}};}
+\DoxyCodeLine{89 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{saisie_8h_a4ce7c5807a9dfbe5a8f94e204239edbe}\label{saisie_8h_a4ce7c5807a9dfbe5a8f94e204239edbe}} 
+\index{saisie.h@{saisie.h}!saisiePlace@{saisiePlace}}
+\index{saisiePlace@{saisiePlace}!saisie.h@{saisie.h}}
+\doxysubsubsection{\texorpdfstring{saisiePlace()}{saisiePlace()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struc_8h_ada528b7d640498194e7205985520646d}{Place}}$\ast$ saisie\+Place (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Saisit les informations d\textquotesingle{}une place à partir de l\textquotesingle{}entrée de l\textquotesingle{}utilisateur. 
+
+\begin{DoxyReturn}{Renvoie}
+Un pointeur vers l\textquotesingle{}objet Place créé. 
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{91                     \{}
+\DoxyCodeLine{92     printf(\textcolor{stringliteral}{"{}Création d'une place\(\backslash\)n"{}});}
+\DoxyCodeLine{93     \mbox{\hyperlink{structplace}{Place}} *\mbox{\hyperlink{structplace}{place}} = malloc(\textcolor{keyword}{sizeof}(\mbox{\hyperlink{structplace}{Place}}));}
+\DoxyCodeLine{94     printf(\textcolor{stringliteral}{"{}Numéro : "{}});}
+\DoxyCodeLine{95     scanf(\textcolor{stringliteral}{"{}\%d"{}}, \&\mbox{\hyperlink{structplace}{place}}-\/>\mbox{\hyperlink{structplace_a44dd9a5288b603a5487d6556275da6e8}{number}});}
+\DoxyCodeLine{96     \mbox{\hyperlink{structplace}{place}}-\/>\mbox{\hyperlink{structplace_a358bc8203e2b0184d27b38b3837493c7}{user}} = NULL;}
+\DoxyCodeLine{97     \mbox{\hyperlink{structplace}{place}}-\/>\mbox{\hyperlink{structplace_ae6c9df23260a268ea37510073e325d99}{event}} = NULL;}
+\DoxyCodeLine{98     \textcolor{keywordflow}{return} \mbox{\hyperlink{structplace}{place}};}
+\DoxyCodeLine{99 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{saisie_8h_a140a953bf6cf999e50a33f191bd4c9e6}\label{saisie_8h_a140a953bf6cf999e50a33f191bd4c9e6}} 
+\index{saisie.h@{saisie.h}!saisiePlat@{saisiePlat}}
+\index{saisiePlat@{saisiePlat}!saisie.h@{saisie.h}}
+\doxysubsubsection{\texorpdfstring{saisiePlat()}{saisiePlat()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struc_8h_a2c54d8dd00dce800770714245e8956a3}{Plat}}$\ast$ saisie\+Plat (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Saisit les informations d\textquotesingle{}un plat à partir de l\textquotesingle{}entrée de l\textquotesingle{}utilisateur. 
+
+\begin{DoxyReturn}{Renvoie}
+Un pointeur vers l\textquotesingle{}objet Plat créé. 
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{58                    \{}
+\DoxyCodeLine{59     printf(\textcolor{stringliteral}{"{}Création de plat\(\backslash\)n"{}});}
+\DoxyCodeLine{60     \mbox{\hyperlink{structplat}{Plat}} *\mbox{\hyperlink{structplat}{plat}} = malloc(\textcolor{keyword}{sizeof}(\mbox{\hyperlink{structplat}{Plat}}));}
+\DoxyCodeLine{61     printf(\textcolor{stringliteral}{"{}Label : "{}});}
+\DoxyCodeLine{62     scanf(\textcolor{stringliteral}{"{}\%s"{}}, \mbox{\hyperlink{structplat}{plat}}-\/>\mbox{\hyperlink{structplat_a75ec3944619439c064e974f49f279a08}{label}});}
+\DoxyCodeLine{63     \textcolor{keywordflow}{while}(getchar() != \textcolor{charliteral}{'\(\backslash\)n'});}
+\DoxyCodeLine{64     \textcolor{keywordflow}{return} \mbox{\hyperlink{structplat}{plat}};}
+\DoxyCodeLine{65 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{saisie_8h_af2154b13a7d0aaabfc243d0044db4160}\label{saisie_8h_af2154b13a7d0aaabfc243d0044db4160}} 
+\index{saisie.h@{saisie.h}!saisieSession@{saisieSession}}
+\index{saisieSession@{saisieSession}!saisie.h@{saisie.h}}
+\doxysubsubsection{\texorpdfstring{saisieSession()}{saisieSession()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struc_8h_afbe8e138e1d2fd861f6c09f63954e927}{Session}}$\ast$ saisie\+Session (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Saisit les informations d\textquotesingle{}une session à partir de l\textquotesingle{}entrée de l\textquotesingle{}utilisateur. 
+
+\begin{DoxyReturn}{Renvoie}
+Un pointeur vers l\textquotesingle{}objet Session créé. 
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{67                         \{}
+\DoxyCodeLine{68     printf(\textcolor{stringliteral}{"{}Création d'une session\(\backslash\)n"{}});}
+\DoxyCodeLine{69     \mbox{\hyperlink{structsession}{Session}} *\mbox{\hyperlink{structsession}{session}} = malloc(\textcolor{keyword}{sizeof}(\mbox{\hyperlink{structsession}{Session}}));}
+\DoxyCodeLine{70     printf(\textcolor{stringliteral}{"{}Nom : "{}});}
+\DoxyCodeLine{71     scanf(\textcolor{stringliteral}{"{}\%s"{}}, \mbox{\hyperlink{structsession}{session}}-\/>\mbox{\hyperlink{structsession_a7d8f9b7d3450cd684ba092406e92bddd}{name}});}
+\DoxyCodeLine{72     printf(\textcolor{stringliteral}{"{}Date (format jj/mm/aaaa) : "{}});}
+\DoxyCodeLine{73     scanf(\textcolor{stringliteral}{"{}\%s"{}}, \mbox{\hyperlink{structsession}{session}}-\/>\mbox{\hyperlink{structsession_a1b8098084c00a0fc14a81a08e477a8b9}{dateSession}});}
+\DoxyCodeLine{74     \mbox{\hyperlink{structsession}{session}}-\/>\mbox{\hyperlink{structsession_a00625422ccb11ee71cd1c60d4df7462e}{nbrFilm}} = 0;}
+\DoxyCodeLine{75     \textcolor{keywordflow}{return} \mbox{\hyperlink{structsession}{session}};}
+\DoxyCodeLine{76 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{saisie_8h_a17dcb9f10d7440827b11e6d19840c3b5}\label{saisie_8h_a17dcb9f10d7440827b11e6d19840c3b5}} 
+\index{saisie.h@{saisie.h}!saisieTicket@{saisieTicket}}
+\index{saisieTicket@{saisieTicket}!saisie.h@{saisie.h}}
+\doxysubsubsection{\texorpdfstring{saisieTicket()}{saisieTicket()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struc_8h_a2be6cff79d24682be3e84aa7b649d892}{Ticket}}$\ast$ saisie\+Ticket (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Saisit les informations d\textquotesingle{}un ticket à partir de l\textquotesingle{}entrée de l\textquotesingle{}utilisateur. 
+
+\begin{DoxyReturn}{Renvoie}
+Un pointeur vers l\textquotesingle{}objet Ticket créé. 
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{101                       \{}
+\DoxyCodeLine{102     printf(\textcolor{stringliteral}{"{}Création d'un ticket\(\backslash\)n"{}});}
+\DoxyCodeLine{103     \mbox{\hyperlink{structticket}{Ticket}} *\mbox{\hyperlink{structticket}{ticket}} = malloc(\textcolor{keyword}{sizeof}(\mbox{\hyperlink{structticket}{Ticket}}));}
+\DoxyCodeLine{104     printf(\textcolor{stringliteral}{"{}Numéro : "{}});}
+\DoxyCodeLine{105     scanf(\textcolor{stringliteral}{"{}\%d"{}}, \&\mbox{\hyperlink{structticket}{ticket}}-\/>\mbox{\hyperlink{structticket_ae4e090144335b1317a1512a5bc55ca52}{number}});}
+\DoxyCodeLine{106     printf(\textcolor{stringliteral}{"{}Date (format jj/mm/aaaa) : "{}});}
+\DoxyCodeLine{107     scanf(\textcolor{stringliteral}{"{}\%s"{}}, \mbox{\hyperlink{structticket}{ticket}}-\/>\mbox{\hyperlink{structticket_aacfe1850ba8e8d538550857fb6a7862c}{dateTicket}});}
+\DoxyCodeLine{108     \mbox{\hyperlink{structticket}{ticket}}-\/>\mbox{\hyperlink{structticket_aced945b3176bf99ac7f05d5c83c3d577}{user}} = NULL;}
+\DoxyCodeLine{109     \mbox{\hyperlink{structticket}{ticket}}-\/>\mbox{\hyperlink{structticket_a0d7972a4819d3457b28aa9a283723ec4}{event}} = NULL;}
+\DoxyCodeLine{110     \textcolor{keywordflow}{return} \mbox{\hyperlink{structticket}{ticket}};}
+\DoxyCodeLine{111 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{saisie_8h_a3d9e55f2d789dced32e2a94d3f233ee1}\label{saisie_8h_a3d9e55f2d789dced32e2a94d3f233ee1}} 
+\index{saisie.h@{saisie.h}!SaisieUser@{SaisieUser}}
+\index{SaisieUser@{SaisieUser}!saisie.h@{saisie.h}}
+\doxysubsubsection{\texorpdfstring{SaisieUser()}{SaisieUser()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struc_8h_af0288466725cf045591f80a7878cd7f2}{User}}$\ast$ Saisie\+User (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Saisit les informations d\textquotesingle{}un utilisateur à partir de l\textquotesingle{}entrée de l\textquotesingle{}utilisateur. 
+
+\begin{DoxyReturn}{Renvoie}
+Un pointeur vers l\textquotesingle{}objet User créé. 
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{5                   \{}
+\DoxyCodeLine{6     printf(\textcolor{stringliteral}{"{}Création de l'utilisateur\(\backslash\)n"{}});}
+\DoxyCodeLine{7     \mbox{\hyperlink{structuser}{User}} *\mbox{\hyperlink{structuser}{user}} = malloc(\textcolor{keyword}{sizeof}(\mbox{\hyperlink{structuser}{User}}));}
+\DoxyCodeLine{8     }
+\DoxyCodeLine{9     printf(\textcolor{stringliteral}{"{}Prénom : "{}});}
+\DoxyCodeLine{10     scanf(\textcolor{stringliteral}{"{}\%s"{}}, \mbox{\hyperlink{structuser}{user}}-\/>\mbox{\hyperlink{structuser_a0792276da416bd247d09c1ae8e787bdc}{firstName}});}
+\DoxyCodeLine{11     \textcolor{keywordflow}{while}(getchar() != \textcolor{charliteral}{'\(\backslash\)n'});}
+\DoxyCodeLine{12     }
+\DoxyCodeLine{13     printf(\textcolor{stringliteral}{"{}Nom : "{}});}
+\DoxyCodeLine{14     scanf(\textcolor{stringliteral}{"{}\%s"{}}, \mbox{\hyperlink{structuser}{user}}-\/>\mbox{\hyperlink{structuser_a9d310b6efa62c8ea57993e23f034b3b9}{lastName}});}
+\DoxyCodeLine{15     \textcolor{keywordflow}{while}(getchar() != \textcolor{charliteral}{'\(\backslash\)n'});}
+\DoxyCodeLine{16     }
+\DoxyCodeLine{17     printf(\textcolor{stringliteral}{"{}Rôle : "{}});}
+\DoxyCodeLine{18     scanf(\textcolor{stringliteral}{"{}\%s"{}}, \mbox{\hyperlink{structuser}{user}}-\/>\mbox{\hyperlink{structuser_ad5bcea9e95be6be0b14d638426888104}{rule}});}
+\DoxyCodeLine{19     \textcolor{keywordflow}{while}(getchar() != \textcolor{charliteral}{'\(\backslash\)n'});}
+\DoxyCodeLine{20     }
+\DoxyCodeLine{21     printf(\textcolor{stringliteral}{"{}Email : "{}});}
+\DoxyCodeLine{22     scanf(\textcolor{stringliteral}{"{}\%s"{}}, \mbox{\hyperlink{structuser}{user}}-\/>\mbox{\hyperlink{structuser_a75e4d75591faf8a0ae89d2d46e70cd67}{email}});}
+\DoxyCodeLine{23     \textcolor{keywordflow}{while}(getchar() != \textcolor{charliteral}{'\(\backslash\)n'});}
+\DoxyCodeLine{24     }
+\DoxyCodeLine{25     printf(\textcolor{stringliteral}{"{}Mot de passe : "{}});}
+\DoxyCodeLine{26     scanf(\textcolor{stringliteral}{"{}\%s"{}}, \mbox{\hyperlink{structuser}{user}}-\/>\mbox{\hyperlink{structuser_a4786f90608b0050c6dbf96490ebb6eea}{password}});}
+\DoxyCodeLine{27     \textcolor{keywordflow}{while}(getchar() != \textcolor{charliteral}{'\(\backslash\)n'});}
+\DoxyCodeLine{28     }
+\DoxyCodeLine{29     \mbox{\hyperlink{structuser}{user}}-\/>\mbox{\hyperlink{structuser_a7c4bd95a9611df1bae140f2ce6648c5a}{id}} = -\/1; \textcolor{comment}{// initialisation de l'ID à -\/1    }}
+\DoxyCodeLine{30     \textcolor{keywordflow}{return} \mbox{\hyperlink{structuser}{user}};}
+\DoxyCodeLine{31 \}}
+
+\end{DoxyCode}

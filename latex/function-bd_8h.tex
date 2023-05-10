@@ -1,0 +1,800 @@
+\hypertarget{function-bd_8h}{}\doxysection{Référence du fichier function-\/bd.h}
+\label{function-bd_8h}\index{function-\/bd.h@{function-\/bd.h}}
+{\ttfamily \#include \char`\"{}struc.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$mysql/mysql.\+h$>$}\newline
+Graphe des dépendances par inclusion de function-\/bd.h\+:
+% FIG 0
+Ce graphe montre quels fichiers incluent directement ou indirectement ce fichier \+:
+% FIG 1
+\doxysubsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struc_8h_af0288466725cf045591f80a7878cd7f2}{User}} $\ast$ \mbox{\hyperlink{function-bd_8h_a08279cf6a88accd06743c978a8b50473}{get\+Users}} (MYSQL $\ast$db)
+\begin{DoxyCompactList}\small\item\em Fonction pour créer un nouvel utilisateur dans la base de données. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struc_8h_a2be6cff79d24682be3e84aa7b649d892}{Ticket}} $\ast$ \mbox{\hyperlink{function-bd_8h_a656eebee439bd5f57805341746465b64}{create\+Ticket}} (MYSQL $\ast$db, \mbox{\hyperlink{struc_8h_a2be6cff79d24682be3e84aa7b649d892}{Ticket}} $\ast$\mbox{\hyperlink{structticket}{ticket}}, \mbox{\hyperlink{struc_8h_ab2f494a6b60c0f52e6c2a96fbe4d010c}{Event}} $\ast$\mbox{\hyperlink{structevent}{event}}, \mbox{\hyperlink{struc_8h_af0288466725cf045591f80a7878cd7f2}{User}} $\ast$\mbox{\hyperlink{structuser}{user}})
+\begin{DoxyCompactList}\small\item\em Fonction pour créer un nouveau ticket dans la base de données pour un utilisateur et un événement donné \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{function-bd_8h_ae9ca1372bc353c4f2b8513946c64f6e4}{create\+Reservation}} (MYSQL $\ast$db, \mbox{\hyperlink{struc_8h_af0288466725cf045591f80a7878cd7f2}{User}} $\ast$\mbox{\hyperlink{structuser}{user}}, \mbox{\hyperlink{struc_8h_ada528b7d640498194e7205985520646d}{Place}} $\ast$\mbox{\hyperlink{structplace}{place}})
+\begin{DoxyCompactList}\small\item\em Fonction pour créer une réservation dans la base de données pour un utilisateur et une place donnée. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{function-bd_8h_a3f2d10defbb427880df651cc40918d55}{create\+Commander}} (MYSQL $\ast$db, \mbox{\hyperlink{struc_8h_af0288466725cf045591f80a7878cd7f2}{User}} $\ast$\mbox{\hyperlink{structuser}{user}}, \mbox{\hyperlink{struc_8h_a2c54d8dd00dce800770714245e8956a3}{Plat}} $\ast$\mbox{\hyperlink{structplat}{plat}})
+\begin{DoxyCompactList}\small\item\em Fonction pour créer une commande dans la base de données pour un utilisateur et un plat donné \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struc_8h_a2c54d8dd00dce800770714245e8956a3}{Plat}} $\ast$ \mbox{\hyperlink{function-bd_8h_ad85f2c9623c3c268cb933ec16a279598}{create\+Plat}} (MYSQL $\ast$db, \mbox{\hyperlink{struc_8h_a2c54d8dd00dce800770714245e8956a3}{Plat}} $\ast$\mbox{\hyperlink{structplat}{plat}}, \mbox{\hyperlink{struc_8h_ab2f494a6b60c0f52e6c2a96fbe4d010c}{Event}} $\ast$\mbox{\hyperlink{structevent}{event}})
+\begin{DoxyCompactList}\small\item\em Fonction pour créer un nouveau plat dans la base de données pour un événement donné \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struc_8h_ada528b7d640498194e7205985520646d}{Place}} $\ast$ \mbox{\hyperlink{function-bd_8h_a8df4fb9e8e3dd4f7e5f5587e2d58b28d}{create\+Place}} (MYSQL $\ast$db, \mbox{\hyperlink{struc_8h_ada528b7d640498194e7205985520646d}{Place}} $\ast$\mbox{\hyperlink{structplace}{place}}, \mbox{\hyperlink{struc_8h_ab2f494a6b60c0f52e6c2a96fbe4d010c}{Event}} $\ast$\mbox{\hyperlink{structevent}{event}})
+\begin{DoxyCompactList}\small\item\em Fonction pour créer une nouvelle place dans la base de données pour un événement donné \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struc_8h_afbe8e138e1d2fd861f6c09f63954e927}{Session}} $\ast$ \mbox{\hyperlink{function-bd_8h_a0b359274b0442de3df9d4013ed6c4d1f}{create\+Session}} (MYSQL $\ast$db, \mbox{\hyperlink{struc_8h_afbe8e138e1d2fd861f6c09f63954e927}{Session}} $\ast$\mbox{\hyperlink{structsession}{session}}, \mbox{\hyperlink{struc_8h_ab2f494a6b60c0f52e6c2a96fbe4d010c}{Event}} $\ast$\mbox{\hyperlink{structevent}{event}})
+\begin{DoxyCompactList}\small\item\em Crée une nouvelle session dans la base de données pour un événement donné \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struc_8h_a7be70f7244cbc0812a720373117ac45e}{Film}} $\ast$ \mbox{\hyperlink{function-bd_8h_a85cfa50a790ad4070a6e12846b111a61}{create\+Film}} (MYSQL $\ast$db, \mbox{\hyperlink{struc_8h_a7be70f7244cbc0812a720373117ac45e}{Film}} $\ast$\mbox{\hyperlink{structfilm}{film}}, \mbox{\hyperlink{struc_8h_afbe8e138e1d2fd861f6c09f63954e927}{Session}} $\ast$\mbox{\hyperlink{structsession}{session}})
+\begin{DoxyCompactList}\small\item\em Crée un nouveau film dans la base de données pour une session donnée. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struc_8h_ab2f494a6b60c0f52e6c2a96fbe4d010c}{Event}} $\ast$ \mbox{\hyperlink{function-bd_8h_a3fe9e952d0bb9ecf509b6d69f3be49d9}{update\+Event}} (MYSQL $\ast$db, \mbox{\hyperlink{struc_8h_ab2f494a6b60c0f52e6c2a96fbe4d010c}{Event}} $\ast$\mbox{\hyperlink{structevent}{event}})
+\begin{DoxyCompactList}\small\item\em Met à jour un événement dans la base de données. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{function-bd_8h_adad22c1542fdbf5eedc5cab0416d7c59}{delete\+Event}} (MYSQL $\ast$db, \mbox{\hyperlink{struc_8h_ab2f494a6b60c0f52e6c2a96fbe4d010c}{Event}} $\ast$\mbox{\hyperlink{structevent}{event}})
+\begin{DoxyCompactList}\small\item\em Supprime un événement de la base de données. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struc_8h_a2c54d8dd00dce800770714245e8956a3}{Plat}} $\ast$$\ast$ \mbox{\hyperlink{function-bd_8h_adbad9aa2a5a8e515f6bc7e563b614479}{get\+Plat\+By\+Event\+Id}} (MYSQL $\ast$db, \mbox{\hyperlink{struc_8h_ab2f494a6b60c0f52e6c2a96fbe4d010c}{Event}} $\ast$\mbox{\hyperlink{structevent}{event}})
+\begin{DoxyCompactList}\small\item\em Récupère tous les plats associés à un événement donné dans la base de données. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struc_8h_afbe8e138e1d2fd861f6c09f63954e927}{Session}} $\ast$$\ast$ \mbox{\hyperlink{function-bd_8h_a206126954c808f6bf94a5aea8ecb1d19}{get\+Session\+By\+Event\+Id}} (MYSQL $\ast$db, \mbox{\hyperlink{struc_8h_ab2f494a6b60c0f52e6c2a96fbe4d010c}{Event}} $\ast$\mbox{\hyperlink{structevent}{event}})
+\begin{DoxyCompactList}\small\item\em Récupère toutes les sessions associées à un événement donné dans la base de données. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struc_8h_ada528b7d640498194e7205985520646d}{Place}} $\ast$$\ast$ \mbox{\hyperlink{function-bd_8h_adaee5408f4f783ab52d66026baabb539}{get\+Place\+By\+Event\+Id}} (MYSQL $\ast$db, \mbox{\hyperlink{struc_8h_ab2f494a6b60c0f52e6c2a96fbe4d010c}{Event}} $\ast$\mbox{\hyperlink{structevent}{event}})
+\begin{DoxyCompactList}\small\item\em Récupère toutes les places associées à un événement donné dans la base de données. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struc_8h_a2be6cff79d24682be3e84aa7b649d892}{Ticket}} $\ast$ \mbox{\hyperlink{function-bd_8h_aa1356d9f82b02a369219b7476d75250d}{get\+Ticket\+By\+User\+Id}} (MYSQL $\ast$db, \mbox{\hyperlink{struc_8h_af0288466725cf045591f80a7878cd7f2}{User}} $\ast$\mbox{\hyperlink{structuser}{user}}, \mbox{\hyperlink{struc_8h_ab2f494a6b60c0f52e6c2a96fbe4d010c}{Event}} $\ast$$\ast$\mbox{\hyperlink{structevent}{event}})
+\begin{DoxyCompactList}\small\item\em Récupère le ticket associé à un utilisateur et à un événement donnés dans la base de données. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struc_8h_ab2f494a6b60c0f52e6c2a96fbe4d010c}{Event}} $\ast$ \mbox{\hyperlink{function-bd_8h_afa452a74d102389df94105095a3c16b8}{get\+Events}} (MYSQL $\ast$db)
+\begin{DoxyCompactList}\small\item\em Récupère tous les événements de la base de données. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struc_8h_a7be70f7244cbc0812a720373117ac45e}{Film}} $\ast$$\ast$ \mbox{\hyperlink{function-bd_8h_a98161e83bb97f93ff44200aced82e97e}{get\+Film\+By\+Session\+Id}} (MYSQL $\ast$db, \mbox{\hyperlink{struc_8h_afbe8e138e1d2fd861f6c09f63954e927}{Session}} $\ast$\mbox{\hyperlink{structsession}{session}})
+\begin{DoxyCompactList}\small\item\em Récupère tous les films associés à une session donnée. Cette fonction se connecte à la base de données via le pointeur db fourni, et récupère tous les films associés à la session fournie dans la table \char`\"{}films\char`\"{}. Elle renvoie un pointeur vers un tableau de films alloué dynamiquement. Si aucun film n\textquotesingle{}est trouvé dans la base de données pour la session fournie, la fonction renvoie NULL. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{function-bd_8h_abfabec1ac7ace6cf06d46acaaff1ac00}{authentification}} (MYSQL $\ast$db, \mbox{\hyperlink{struc_8h_af0288466725cf045591f80a7878cd7f2}{User}} $\ast$\mbox{\hyperlink{structuser}{user}})
+\begin{DoxyCompactList}\small\item\em Vérifie l\textquotesingle{}authentification d\textquotesingle{}un utilisateur. Cette fonction se connecte à la base de données via le pointeur db fourni, et vérifie si l\textquotesingle{}utilisateur fourni est présent dans la table \char`\"{}users\char`\"{} avec le mot de passe correspondant. Elle renvoie true si l\textquotesingle{}authentification est réussie, sinon false. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Documentation des fonctions}
+\mbox{\Hypertarget{function-bd_8h_abfabec1ac7ace6cf06d46acaaff1ac00}\label{function-bd_8h_abfabec1ac7ace6cf06d46acaaff1ac00}} 
+\index{function-\/bd.h@{function-\/bd.h}!authentification@{authentification}}
+\index{authentification@{authentification}!function-\/bd.h@{function-\/bd.h}}
+\doxysubsubsection{\texorpdfstring{authentification()}{authentification()}}
+{\footnotesize\ttfamily bool authentification (\begin{DoxyParamCaption}\item[{MYSQL $\ast$}]{db,  }\item[{\mbox{\hyperlink{struc_8h_af0288466725cf045591f80a7878cd7f2}{User}} $\ast$}]{user }\end{DoxyParamCaption})}
+
+
+
+Vérifie l\textquotesingle{}authentification d\textquotesingle{}un utilisateur. Cette fonction se connecte à la base de données via le pointeur db fourni, et vérifie si l\textquotesingle{}utilisateur fourni est présent dans la table \char`\"{}users\char`\"{} avec le mot de passe correspondant. Elle renvoie true si l\textquotesingle{}authentification est réussie, sinon false. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em db} & Pointeur vers la base de données. \\
+\hline
+{\em user} & Pointeur vers l\textquotesingle{}utilisateur à vérifier. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+true si l\textquotesingle{}authentification est réussie, sinon false. 
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{332                                               \{}
+\DoxyCodeLine{333      MYSQL\_RES *result = NULL;}
+\DoxyCodeLine{334      MYSQL\_ROW row;}
+\DoxyCodeLine{335      \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} i = 0;}
+\DoxyCodeLine{336      \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} num\_champs = 0;}
+\DoxyCodeLine{337      \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{long} *lengths;}
+\DoxyCodeLine{338      \textcolor{keywordtype}{char} query[1000];}
+\DoxyCodeLine{339      sprintf(query, \textcolor{stringliteral}{"{}select * from user where email=\(\backslash\)"{}\%s\(\backslash\)"{} and password=\(\backslash\)"{}\%s\(\backslash\)"{}"{}}, \mbox{\hyperlink{structuser}{user}}-\/>\mbox{\hyperlink{structuser_a75e4d75591faf8a0ae89d2d46e70cd67}{email}}, \mbox{\hyperlink{structuser}{user}}-\/>\mbox{\hyperlink{structuser_a4786f90608b0050c6dbf96490ebb6eea}{password}});}
+\DoxyCodeLine{340      mysql\_query(db, query);}
+\DoxyCodeLine{341      result = mysql\_store\_result(db);}
+\DoxyCodeLine{342      num\_champs = mysql\_num\_fields(result);}
+\DoxyCodeLine{343      \textcolor{keywordtype}{bool} isAuth = \textcolor{keyword}{false};}
+\DoxyCodeLine{344      \textcolor{keywordflow}{while} ((row = mysql\_fetch\_row(result)))\{}
+\DoxyCodeLine{345           isAuth= \textcolor{keyword}{true};}
+\DoxyCodeLine{346       \}}
+\DoxyCodeLine{347      \textcolor{keywordflow}{return} isAuth;}
+\DoxyCodeLine{348 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{function-bd_8h_a3f2d10defbb427880df651cc40918d55}\label{function-bd_8h_a3f2d10defbb427880df651cc40918d55}} 
+\index{function-\/bd.h@{function-\/bd.h}!createCommander@{createCommander}}
+\index{createCommander@{createCommander}!function-\/bd.h@{function-\/bd.h}}
+\doxysubsubsection{\texorpdfstring{createCommander()}{createCommander()}}
+{\footnotesize\ttfamily void create\+Commander (\begin{DoxyParamCaption}\item[{MYSQL $\ast$}]{db,  }\item[{\mbox{\hyperlink{struc_8h_af0288466725cf045591f80a7878cd7f2}{User}} $\ast$}]{user,  }\item[{\mbox{\hyperlink{struc_8h_a2c54d8dd00dce800770714245e8956a3}{Plat}} $\ast$}]{plat }\end{DoxyParamCaption})}
+
+
+
+Fonction pour créer une commande dans la base de données pour un utilisateur et un plat donné 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em db} & Pointeur vers la base de données \\
+\hline
+{\em user} & Pointeur vers l\textquotesingle{}utilisateur qui effectue la commande \\
+\hline
+{\em plat} & Pointeur vers le plat commandé \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{84                                                           \{}
+\DoxyCodeLine{85      MYSQL\_RES *result = NULL;}
+\DoxyCodeLine{86      MYSQL\_ROW row;}
+\DoxyCodeLine{87      \textcolor{keywordtype}{int} i = 0;}
+\DoxyCodeLine{88      \textcolor{keywordtype}{char} query[1000];}
+\DoxyCodeLine{89      sprintf(query, \textcolor{stringliteral}{"{}insert into commander (use\_id, pla\_id) values(\(\backslash\)"{}\%d\(\backslash\)"{}, \(\backslash\)"{}\%d\(\backslash\)"{})"{}}, \mbox{\hyperlink{structuser}{user}}-\/>\mbox{\hyperlink{structuser_a7c4bd95a9611df1bae140f2ce6648c5a}{id}}, \mbox{\hyperlink{structplat}{plat}}-\/>\mbox{\hyperlink{structplat_aa79fc2c7d59677037226936c69e05040}{id}});}
+\DoxyCodeLine{90      mysql\_query(db, query);}
+\DoxyCodeLine{91 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{function-bd_8h_a85cfa50a790ad4070a6e12846b111a61}\label{function-bd_8h_a85cfa50a790ad4070a6e12846b111a61}} 
+\index{function-\/bd.h@{function-\/bd.h}!createFilm@{createFilm}}
+\index{createFilm@{createFilm}!function-\/bd.h@{function-\/bd.h}}
+\doxysubsubsection{\texorpdfstring{createFilm()}{createFilm()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struc_8h_a7be70f7244cbc0812a720373117ac45e}{Film}}$\ast$ create\+Film (\begin{DoxyParamCaption}\item[{MYSQL $\ast$}]{db,  }\item[{\mbox{\hyperlink{struc_8h_a7be70f7244cbc0812a720373117ac45e}{Film}} $\ast$}]{film,  }\item[{\mbox{\hyperlink{struc_8h_afbe8e138e1d2fd861f6c09f63954e927}{Session}} $\ast$}]{session }\end{DoxyParamCaption})}
+
+
+
+Crée un nouveau film dans la base de données pour une session donnée. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em db} & Pointeur vers la base de données \\
+\hline
+{\em film} & Pointeur vers le film à créer \\
+\hline
+{\em session} & Pointeur vers la session à laquelle le film appartient \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+Film$\ast$ Pointeur vers le film créé si la création a réussi, NULL sinon 
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{141                                                               \{}
+\DoxyCodeLine{142      MYSQL\_RES *result = NULL;}
+\DoxyCodeLine{143      MYSQL\_ROW row;}
+\DoxyCodeLine{144      \textcolor{keywordtype}{int} i = 0;}
+\DoxyCodeLine{145      \textcolor{keywordtype}{char} query[1000];}
+\DoxyCodeLine{146      sprintf(query, \textcolor{stringliteral}{"{}insert into film (ses\_id, titre, description, auteur) values(\(\backslash\)"{}\%d\(\backslash\)"{}, \(\backslash\)"{}\%s\(\backslash\)"{},\(\backslash\)"{}\%s\(\backslash\)"{}, \(\backslash\)"{}\%s\(\backslash\)"{})"{}}, \mbox{\hyperlink{structsession}{session}}-\/>\mbox{\hyperlink{structsession_a29ffa9635cf0b2dde142ffeb835c2f43}{id}}, \mbox{\hyperlink{structfilm}{film}}-\/>\mbox{\hyperlink{structfilm_a4acbafdef3f4db6c506188b57b9aa1e6}{titre}}, \mbox{\hyperlink{structfilm}{film}}-\/>\mbox{\hyperlink{structfilm_a956c048b78895d1e6b88a9f9ec0fd637}{description}}, \mbox{\hyperlink{structfilm}{film}}-\/>\mbox{\hyperlink{structfilm_a1b51f780a844771f2ebd8e117bf0cdff}{auteur}});}
+\DoxyCodeLine{147      mysql\_query(db, query);}
+\DoxyCodeLine{148      \textcolor{keywordtype}{char} query2[] = \textcolor{stringliteral}{"{}select last\_insert\_id()"{}};}
+\DoxyCodeLine{149      mysql\_query(db, query2);}
+\DoxyCodeLine{150      result = mysql\_store\_result(db);}
+\DoxyCodeLine{151      row = mysql\_fetch\_row(result);}
+\DoxyCodeLine{152      \mbox{\hyperlink{structfilm}{film}}-\/>\mbox{\hyperlink{structfilm_a47a330f45cd7aa0cfbc059d9eeab1c78}{id}} = atoi(row[0]);}
+\DoxyCodeLine{153      \mbox{\hyperlink{structfilm}{film}}-\/>\mbox{\hyperlink{structfilm_a3573647ae7de9da9744bc8e1ca8618b4}{session}} = \mbox{\hyperlink{structsession}{session}};}
+\DoxyCodeLine{154      \textcolor{keywordflow}{return} \mbox{\hyperlink{structfilm}{film}};}
+\DoxyCodeLine{155 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{function-bd_8h_a8df4fb9e8e3dd4f7e5f5587e2d58b28d}\label{function-bd_8h_a8df4fb9e8e3dd4f7e5f5587e2d58b28d}} 
+\index{function-\/bd.h@{function-\/bd.h}!createPlace@{createPlace}}
+\index{createPlace@{createPlace}!function-\/bd.h@{function-\/bd.h}}
+\doxysubsubsection{\texorpdfstring{createPlace()}{createPlace()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struc_8h_ada528b7d640498194e7205985520646d}{Place}}$\ast$ create\+Place (\begin{DoxyParamCaption}\item[{MYSQL $\ast$}]{db,  }\item[{\mbox{\hyperlink{struc_8h_ada528b7d640498194e7205985520646d}{Place}} $\ast$}]{place,  }\item[{\mbox{\hyperlink{struc_8h_ab2f494a6b60c0f52e6c2a96fbe4d010c}{Event}} $\ast$}]{event }\end{DoxyParamCaption})}
+
+
+
+Fonction pour créer une nouvelle place dans la base de données pour un événement donné 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em db} & Pointeur vers la base de données \\
+\hline
+{\em place} & Pointeur vers la place à créer \\
+\hline
+{\em event} & Pointeur vers l\textquotesingle{}événement pour lequel la place est créée \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+Pointeur vers la place créée dans la base de données 
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{109                                                               \{}
+\DoxyCodeLine{110      MYSQL\_RES *result = NULL;}
+\DoxyCodeLine{111      MYSQL\_ROW row;}
+\DoxyCodeLine{112      \textcolor{keywordtype}{int} i = 0;}
+\DoxyCodeLine{113      \textcolor{keywordtype}{char} query[1000];}
+\DoxyCodeLine{114      sprintf(query, \textcolor{stringliteral}{"{}insert into place (eve\_id, number) values(\(\backslash\)"{}\%d\(\backslash\)"{}, \(\backslash\)"{}\%d\(\backslash\)"{})"{}}, \mbox{\hyperlink{structevent}{event}}-\/>\mbox{\hyperlink{structevent_a0a0a7d584539d22a52689acd33be40de}{id}}, \mbox{\hyperlink{structplace}{place}}-\/>\mbox{\hyperlink{structplace_a44dd9a5288b603a5487d6556275da6e8}{number}});}
+\DoxyCodeLine{115      mysql\_query(db, query);}
+\DoxyCodeLine{116      \textcolor{keywordtype}{char} query2[] = \textcolor{stringliteral}{"{}select last\_insert\_id()"{}};}
+\DoxyCodeLine{117      mysql\_query(db, query2);}
+\DoxyCodeLine{118      result = mysql\_store\_result(db);}
+\DoxyCodeLine{119      row = mysql\_fetch\_row(result);}
+\DoxyCodeLine{120      \mbox{\hyperlink{structplace}{place}}-\/>\mbox{\hyperlink{structplace_a4157b92fc28e3ac81a6ef8eb420bd021}{id}} = atoi(row[0]);}
+\DoxyCodeLine{121      \mbox{\hyperlink{structplace}{place}}-\/>\mbox{\hyperlink{structplace_ae6c9df23260a268ea37510073e325d99}{event}} = \mbox{\hyperlink{structevent}{event}};}
+\DoxyCodeLine{122      \textcolor{keywordflow}{return} \mbox{\hyperlink{structplace}{place}};}
+\DoxyCodeLine{123 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{function-bd_8h_ad85f2c9623c3c268cb933ec16a279598}\label{function-bd_8h_ad85f2c9623c3c268cb933ec16a279598}} 
+\index{function-\/bd.h@{function-\/bd.h}!createPlat@{createPlat}}
+\index{createPlat@{createPlat}!function-\/bd.h@{function-\/bd.h}}
+\doxysubsubsection{\texorpdfstring{createPlat()}{createPlat()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struc_8h_a2c54d8dd00dce800770714245e8956a3}{Plat}}$\ast$ create\+Plat (\begin{DoxyParamCaption}\item[{MYSQL $\ast$}]{db,  }\item[{\mbox{\hyperlink{struc_8h_a2c54d8dd00dce800770714245e8956a3}{Plat}} $\ast$}]{plat,  }\item[{\mbox{\hyperlink{struc_8h_ab2f494a6b60c0f52e6c2a96fbe4d010c}{Event}} $\ast$}]{event }\end{DoxyParamCaption})}
+
+
+
+Fonction pour créer un nouveau plat dans la base de données pour un événement donné 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em db} & Pointeur vers la base de données \\
+\hline
+{\em plat} & Pointeur vers le plat à créer \\
+\hline
+{\em event} & Pointeur vers l\textquotesingle{}événement pour lequel le plat est créé \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+Pointeur vers le plat créé dans la base de données 
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{93                                                           \{}
+\DoxyCodeLine{94      MYSQL\_RES *result = NULL;}
+\DoxyCodeLine{95      MYSQL\_ROW row;}
+\DoxyCodeLine{96      \textcolor{keywordtype}{int} i = 0;}
+\DoxyCodeLine{97      \textcolor{keywordtype}{char} query[1000];}
+\DoxyCodeLine{98      sprintf(query, \textcolor{stringliteral}{"{}insert into plat (eve\_id, label) values(\(\backslash\)"{}\%d\(\backslash\)"{}, \(\backslash\)"{}\%s\(\backslash\)"{})"{}}, \mbox{\hyperlink{structevent}{event}}-\/>\mbox{\hyperlink{structevent_a0a0a7d584539d22a52689acd33be40de}{id}}, \mbox{\hyperlink{structplat}{plat}}-\/>\mbox{\hyperlink{structplat_a75ec3944619439c064e974f49f279a08}{label}});}
+\DoxyCodeLine{99      mysql\_query(db, query);}
+\DoxyCodeLine{100      \textcolor{keywordtype}{char} query2[] = \textcolor{stringliteral}{"{}select last\_insert\_id()"{}};}
+\DoxyCodeLine{101      mysql\_query(db, query2);}
+\DoxyCodeLine{102      result = mysql\_store\_result(db);}
+\DoxyCodeLine{103      row = mysql\_fetch\_row(result);}
+\DoxyCodeLine{104      \mbox{\hyperlink{structplat}{plat}}-\/>\mbox{\hyperlink{structplat_aa79fc2c7d59677037226936c69e05040}{id}} = atoi(row[0]);}
+\DoxyCodeLine{105      \mbox{\hyperlink{structplat}{plat}}-\/>\mbox{\hyperlink{structplat_a732011e4a5e49613f80d1896f477c034}{event}} = \mbox{\hyperlink{structevent}{event}};}
+\DoxyCodeLine{106      \textcolor{keywordflow}{return} \mbox{\hyperlink{structplat}{plat}};}
+\DoxyCodeLine{107 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{function-bd_8h_ae9ca1372bc353c4f2b8513946c64f6e4}\label{function-bd_8h_ae9ca1372bc353c4f2b8513946c64f6e4}} 
+\index{function-\/bd.h@{function-\/bd.h}!createReservation@{createReservation}}
+\index{createReservation@{createReservation}!function-\/bd.h@{function-\/bd.h}}
+\doxysubsubsection{\texorpdfstring{createReservation()}{createReservation()}}
+{\footnotesize\ttfamily void create\+Reservation (\begin{DoxyParamCaption}\item[{MYSQL $\ast$}]{db,  }\item[{\mbox{\hyperlink{struc_8h_af0288466725cf045591f80a7878cd7f2}{User}} $\ast$}]{user,  }\item[{\mbox{\hyperlink{struc_8h_ada528b7d640498194e7205985520646d}{Place}} $\ast$}]{place }\end{DoxyParamCaption})}
+
+
+
+Fonction pour créer une réservation dans la base de données pour un utilisateur et une place donnée. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em db} & Pointeur vers la base de données \\
+\hline
+{\em user} & Pointeur vers l\textquotesingle{}utilisateur qui effectue la réservation \\
+\hline
+{\em place} & Pointeur vers la place réservée \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{75                                                                \{}
+\DoxyCodeLine{76      MYSQL\_RES *result = NULL;}
+\DoxyCodeLine{77      MYSQL\_ROW row;}
+\DoxyCodeLine{78      \textcolor{keywordtype}{int} i = 0;}
+\DoxyCodeLine{79      \textcolor{keywordtype}{char} query[1000];}
+\DoxyCodeLine{80      sprintf(query, \textcolor{stringliteral}{"{}insert into reserver (use\_id, pla\_id) values(\(\backslash\)"{}\%d\(\backslash\)"{}, \(\backslash\)"{}\%d\(\backslash\)"{})"{}}, \mbox{\hyperlink{structuser}{user}}-\/>\mbox{\hyperlink{structuser_a7c4bd95a9611df1bae140f2ce6648c5a}{id}}, \mbox{\hyperlink{structplace}{place}}-\/>\mbox{\hyperlink{structplace_a4157b92fc28e3ac81a6ef8eb420bd021}{id}});}
+\DoxyCodeLine{81      mysql\_query(db, query);}
+\DoxyCodeLine{82 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{function-bd_8h_a0b359274b0442de3df9d4013ed6c4d1f}\label{function-bd_8h_a0b359274b0442de3df9d4013ed6c4d1f}} 
+\index{function-\/bd.h@{function-\/bd.h}!createSession@{createSession}}
+\index{createSession@{createSession}!function-\/bd.h@{function-\/bd.h}}
+\doxysubsubsection{\texorpdfstring{createSession()}{createSession()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struc_8h_afbe8e138e1d2fd861f6c09f63954e927}{Session}}$\ast$ create\+Session (\begin{DoxyParamCaption}\item[{MYSQL $\ast$}]{db,  }\item[{\mbox{\hyperlink{struc_8h_afbe8e138e1d2fd861f6c09f63954e927}{Session}} $\ast$}]{session,  }\item[{\mbox{\hyperlink{struc_8h_ab2f494a6b60c0f52e6c2a96fbe4d010c}{Event}} $\ast$}]{event }\end{DoxyParamCaption})}
+
+
+
+Crée une nouvelle session dans la base de données pour un événement donné 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em db} & Pointeur vers la base de données \\
+\hline
+{\em session} & Pointeur vers la session à créer \\
+\hline
+{\em event} & Pointeur vers l\textquotesingle{}événement auquel la session appartient \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+Session$\ast$ Pointeur vers la session créée si elle a été créée avec succès, NULL sinon 
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{125                                                                       \{}
+\DoxyCodeLine{126      MYSQL\_RES *result = NULL;}
+\DoxyCodeLine{127      MYSQL\_ROW row;}
+\DoxyCodeLine{128      \textcolor{keywordtype}{int} i = 0;}
+\DoxyCodeLine{129      \textcolor{keywordtype}{char} query[1000];}
+\DoxyCodeLine{130      sprintf(query, \textcolor{stringliteral}{"{}insert into session (eve\_id, name, date\_session) values(\(\backslash\)"{}\%d\(\backslash\)"{}, \(\backslash\)"{}\%s\(\backslash\)"{},\(\backslash\)"{}\%s\(\backslash\)"{})"{}}, \mbox{\hyperlink{structevent}{event}}-\/>\mbox{\hyperlink{structevent_a0a0a7d584539d22a52689acd33be40de}{id}}, \mbox{\hyperlink{structsession}{session}}-\/>\mbox{\hyperlink{structsession_a7d8f9b7d3450cd684ba092406e92bddd}{name}}, \mbox{\hyperlink{structsession}{session}}-\/>\mbox{\hyperlink{structsession_a1b8098084c00a0fc14a81a08e477a8b9}{dateSession}});}
+\DoxyCodeLine{131      mysql\_query(db, query);}
+\DoxyCodeLine{132      \textcolor{keywordtype}{char} query2[] = \textcolor{stringliteral}{"{}select last\_insert\_id()"{}};}
+\DoxyCodeLine{133      mysql\_query(db, query2);}
+\DoxyCodeLine{134      result = mysql\_store\_result(db);}
+\DoxyCodeLine{135      row = mysql\_fetch\_row(result);}
+\DoxyCodeLine{136      \mbox{\hyperlink{structsession}{session}}-\/>\mbox{\hyperlink{structsession_a29ffa9635cf0b2dde142ffeb835c2f43}{id}} = atoi(row[0]);}
+\DoxyCodeLine{137      \mbox{\hyperlink{structsession}{session}}-\/>\mbox{\hyperlink{structsession_acdc3ec3972db9a769d2dac93e12bc839}{event}} = \mbox{\hyperlink{structevent}{event}};}
+\DoxyCodeLine{138      \textcolor{keywordflow}{return} \mbox{\hyperlink{structsession}{session}};}
+\DoxyCodeLine{139 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{function-bd_8h_a656eebee439bd5f57805341746465b64}\label{function-bd_8h_a656eebee439bd5f57805341746465b64}} 
+\index{function-\/bd.h@{function-\/bd.h}!createTicket@{createTicket}}
+\index{createTicket@{createTicket}!function-\/bd.h@{function-\/bd.h}}
+\doxysubsubsection{\texorpdfstring{createTicket()}{createTicket()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struc_8h_a2be6cff79d24682be3e84aa7b649d892}{Ticket}}$\ast$ create\+Ticket (\begin{DoxyParamCaption}\item[{MYSQL $\ast$}]{db,  }\item[{\mbox{\hyperlink{struc_8h_a2be6cff79d24682be3e84aa7b649d892}{Ticket}} $\ast$}]{ticket,  }\item[{\mbox{\hyperlink{struc_8h_ab2f494a6b60c0f52e6c2a96fbe4d010c}{Event}} $\ast$}]{event,  }\item[{\mbox{\hyperlink{struc_8h_af0288466725cf045591f80a7878cd7f2}{User}} $\ast$}]{user }\end{DoxyParamCaption})}
+
+
+
+Fonction pour créer un nouveau ticket dans la base de données pour un utilisateur et un événement donné 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em db} & Pointeur vers la base de données \\
+\hline
+{\em ticket} & Pointeur vers le ticket à créer \\
+\hline
+{\em event} & Pointeur vers l\textquotesingle{}événement pour lequel le ticket est créé \\
+\hline
+{\em user} & Pointeur vers l\textquotesingle{}utilisateur qui achète le ticket \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+Pointeur vers le ticket créé dans la base de données 
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{58 \{}
+\DoxyCodeLine{59      MYSQL\_RES *result = NULL;}
+\DoxyCodeLine{60      MYSQL\_ROW row;}
+\DoxyCodeLine{61      \textcolor{keywordtype}{int} i = 0;}
+\DoxyCodeLine{62      \textcolor{keywordtype}{char} query[1000];}
+\DoxyCodeLine{63      sprintf(query, \textcolor{stringliteral}{"{}insert into ticket (use\_id, eve\_id, number, date\_ticket) values(\(\backslash\)"{}\%d\(\backslash\)"{}, \(\backslash\)"{}\%d\(\backslash\)"{}, \(\backslash\)"{}\%d\(\backslash\)"{},NOW())"{}}, \mbox{\hyperlink{structuser}{user}}-\/>\mbox{\hyperlink{structuser_a7c4bd95a9611df1bae140f2ce6648c5a}{id}}, \mbox{\hyperlink{structevent}{event}}-\/>\mbox{\hyperlink{structevent_a0a0a7d584539d22a52689acd33be40de}{id}}, \mbox{\hyperlink{structticket}{ticket}}-\/>\mbox{\hyperlink{structticket_ae4e090144335b1317a1512a5bc55ca52}{number}});}
+\DoxyCodeLine{64      mysql\_query(db, query);}
+\DoxyCodeLine{65      \textcolor{keywordtype}{char} query2[] = \textcolor{stringliteral}{"{}select last\_insert\_id()"{}};}
+\DoxyCodeLine{66      mysql\_query(db, query2);}
+\DoxyCodeLine{67      result = mysql\_store\_result(db);}
+\DoxyCodeLine{68      row = mysql\_fetch\_row(result);}
+\DoxyCodeLine{69      \mbox{\hyperlink{structticket}{ticket}}-\/>\mbox{\hyperlink{structticket_ad3cd21ffd06c78b3260dfae33ddc4f93}{id}} = atoi(row[0]);}
+\DoxyCodeLine{70      \mbox{\hyperlink{structticket}{ticket}}-\/>\mbox{\hyperlink{structticket_aced945b3176bf99ac7f05d5c83c3d577}{user}} = \mbox{\hyperlink{structuser}{user}};}
+\DoxyCodeLine{71      \mbox{\hyperlink{structticket}{ticket}}-\/>\mbox{\hyperlink{structticket_a0d7972a4819d3457b28aa9a283723ec4}{event}}= \mbox{\hyperlink{structevent}{event}};}
+\DoxyCodeLine{72      \textcolor{keywordflow}{return} \mbox{\hyperlink{structticket}{ticket}};}
+\DoxyCodeLine{73 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{function-bd_8h_adad22c1542fdbf5eedc5cab0416d7c59}\label{function-bd_8h_adad22c1542fdbf5eedc5cab0416d7c59}} 
+\index{function-\/bd.h@{function-\/bd.h}!deleteEvent@{deleteEvent}}
+\index{deleteEvent@{deleteEvent}!function-\/bd.h@{function-\/bd.h}}
+\doxysubsubsection{\texorpdfstring{deleteEvent()}{deleteEvent()}}
+{\footnotesize\ttfamily void delete\+Event (\begin{DoxyParamCaption}\item[{MYSQL $\ast$}]{db,  }\item[{\mbox{\hyperlink{struc_8h_ab2f494a6b60c0f52e6c2a96fbe4d010c}{Event}} $\ast$}]{event }\end{DoxyParamCaption})}
+
+
+
+Supprime un événement de la base de données. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em db} & Pointeur vers la base de données \\
+\hline
+{\em event} & Pointeur vers l\textquotesingle{}événement à supprimer \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{169                                           \{}
+\DoxyCodeLine{170      MYSQL\_RES *result = NULL;}
+\DoxyCodeLine{171      MYSQL\_ROW row;}
+\DoxyCodeLine{172      \textcolor{keywordtype}{int} i = 0;}
+\DoxyCodeLine{173      \textcolor{keywordtype}{char} query[1000];}
+\DoxyCodeLine{174      sprintf(query, \textcolor{stringliteral}{"{}delete from event where id=\%d"{}}, \mbox{\hyperlink{structevent}{event}}-\/>\mbox{\hyperlink{structevent_a0a0a7d584539d22a52689acd33be40de}{id}});}
+\DoxyCodeLine{175      mysql\_query(db, query);}
+\DoxyCodeLine{176 \} }
+
+\end{DoxyCode}
+\mbox{\Hypertarget{function-bd_8h_afa452a74d102389df94105095a3c16b8}\label{function-bd_8h_afa452a74d102389df94105095a3c16b8}} 
+\index{function-\/bd.h@{function-\/bd.h}!getEvents@{getEvents}}
+\index{getEvents@{getEvents}!function-\/bd.h@{function-\/bd.h}}
+\doxysubsubsection{\texorpdfstring{getEvents()}{getEvents()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struc_8h_ab2f494a6b60c0f52e6c2a96fbe4d010c}{Event}}$\ast$ get\+Events (\begin{DoxyParamCaption}\item[{MYSQL $\ast$}]{db }\end{DoxyParamCaption})}
+
+
+
+Récupère tous les événements de la base de données. 
+
+Récupère tous les événements stockés dans la base de données. Cette fonction se connecte à la base de données via le pointeur db fourni, et récupère tous les événements stockés dans la table \char`\"{}events\char`\"{}. Elle renvoie un pointeur vers un tableau d\textquotesingle{}événements alloué dynamiquement. Si aucun événement n\textquotesingle{}est trouvé dans la base de données, la fonction renvoie NULL.
+
+
+\begin{DoxyParams}{Paramètres}
+{\em db} & Pointeur vers la base de données \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+Event$\ast$ Tableau de pointeurs vers les événements de la base de données
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Paramètres}
+{\em db} & Pointeur vers la base de données. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+Pointeur vers un tableau d\textquotesingle{}événements, ou NULL si aucun événement n\textquotesingle{}est trouvé.
+\end{DoxyReturn}
+Récupère tous les événements de la base de données.
+
+
+\begin{DoxyParams}{Paramètres}
+{\em db} & Pointeur vers la base de données. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+Pointeur vers un tableau d\textquotesingle{}événements, ou NULL si aucun événement n\textquotesingle{}est trouvé. 
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{278                             \{}
+\DoxyCodeLine{279      MYSQL\_RES *result = NULL;}
+\DoxyCodeLine{280      MYSQL\_ROW row;}
+\DoxyCodeLine{281      \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} i = 0;}
+\DoxyCodeLine{282      \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} num\_champs = 0;}
+\DoxyCodeLine{283      \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{long} *lengths;}
+\DoxyCodeLine{284      \textcolor{keywordtype}{char} query[1000];}
+\DoxyCodeLine{285      \mbox{\hyperlink{structevent}{Event}} *eventTable =malloc(100 * \textcolor{keyword}{sizeof}(\mbox{\hyperlink{structevent}{Event}}));}
+\DoxyCodeLine{286      sprintf(query, \textcolor{stringliteral}{"{}select * from event"{}});}
+\DoxyCodeLine{287      mysql\_query(db, query);}
+\DoxyCodeLine{288      result = mysql\_store\_result(db);}
+\DoxyCodeLine{289      num\_champs = mysql\_num\_fields(result);}
+\DoxyCodeLine{290      \textcolor{keywordflow}{while} ((row = mysql\_fetch\_row(result)))\{}
+\DoxyCodeLine{291           lengths = mysql\_fetch\_lengths(result);}
+\DoxyCodeLine{292           eventTable[i].\mbox{\hyperlink{structevent_a0a0a7d584539d22a52689acd33be40de}{id}} = atoi(row[0]);}
+\DoxyCodeLine{293           sprintf(eventTable[i].type, \textcolor{stringliteral}{"{}\%s"{}}, row[1]);}
+\DoxyCodeLine{294           sprintf(eventTable[i].lieu, \textcolor{stringliteral}{"{}\%s"{}}, row[2]);}
+\DoxyCodeLine{295           sprintf(eventTable[i].dateEvent, \textcolor{stringliteral}{"{}\%s"{}}, row[3]);}
+\DoxyCodeLine{296           sprintf(eventTable[i].label, \textcolor{stringliteral}{"{}\%s"{}}, row[4]);}
+\DoxyCodeLine{297           eventTable[i].\mbox{\hyperlink{structevent_a62c1beb0db32f84b15b49c5dd3d41e57}{place}} = \mbox{\hyperlink{function-bd_8c_adaee5408f4f783ab52d66026baabb539}{getPlaceByEventId}}(db, \&eventTable[i]);}
+\DoxyCodeLine{298           eventTable[i].\mbox{\hyperlink{structevent_a0d708b97f7f046cead95d7ef16b52f9e}{plat}} = \mbox{\hyperlink{function-bd_8c_adbad9aa2a5a8e515f6bc7e563b614479}{getPlatByEventId}}(db, \&eventTable[i]);}
+\DoxyCodeLine{299           eventTable[i].\mbox{\hyperlink{structevent_a21f00b2c677c83207a1606f485b61afb}{session}} = \mbox{\hyperlink{function-bd_8c_a206126954c808f6bf94a5aea8ecb1d19}{getSessionByEventId}}(db, \&eventTable[i]);}
+\DoxyCodeLine{300           i++;}
+\DoxyCodeLine{301       \}}
+\DoxyCodeLine{302      \textcolor{keywordflow}{return} eventTable;   }
+\DoxyCodeLine{303 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{function-bd_8h_a98161e83bb97f93ff44200aced82e97e}\label{function-bd_8h_a98161e83bb97f93ff44200aced82e97e}} 
+\index{function-\/bd.h@{function-\/bd.h}!getFilmBySessionId@{getFilmBySessionId}}
+\index{getFilmBySessionId@{getFilmBySessionId}!function-\/bd.h@{function-\/bd.h}}
+\doxysubsubsection{\texorpdfstring{getFilmBySessionId()}{getFilmBySessionId()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struc_8h_a7be70f7244cbc0812a720373117ac45e}{Film}}$\ast$$\ast$ get\+Film\+By\+Session\+Id (\begin{DoxyParamCaption}\item[{MYSQL $\ast$}]{db,  }\item[{\mbox{\hyperlink{struc_8h_afbe8e138e1d2fd861f6c09f63954e927}{Session}} $\ast$}]{session }\end{DoxyParamCaption})}
+
+
+
+Récupère tous les films associés à une session donnée. Cette fonction se connecte à la base de données via le pointeur db fourni, et récupère tous les films associés à la session fournie dans la table \char`\"{}films\char`\"{}. Elle renvoie un pointeur vers un tableau de films alloué dynamiquement. Si aucun film n\textquotesingle{}est trouvé dans la base de données pour la session fournie, la fonction renvoie NULL. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em db} & Pointeur vers la base de données. \\
+\hline
+{\em session} & Pointeur vers la session pour laquelle récupérer les films. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+Pointeur vers un tableau de films, ou NULL si aucun film n\textquotesingle{}est trouvé. 
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{305                                                         \{}
+\DoxyCodeLine{306      MYSQL\_RES *result = NULL;}
+\DoxyCodeLine{307      MYSQL\_ROW row;}
+\DoxyCodeLine{308      \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} i = 0;}
+\DoxyCodeLine{309      \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} num\_champs = 0;}
+\DoxyCodeLine{310      \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{long} *lengths;}
+\DoxyCodeLine{311      \textcolor{keywordtype}{char} query[1000];}
+\DoxyCodeLine{312      \mbox{\hyperlink{structfilm}{Film}} **filmTable =malloc(100 * \textcolor{keyword}{sizeof}(\mbox{\hyperlink{structfilm}{Film}}*));}
+\DoxyCodeLine{313      sprintf(query, \textcolor{stringliteral}{"{}select * from film inner join session on film.ses\_id=session.id where session.id=\%d"{}}, \mbox{\hyperlink{structsession}{session}}-\/>\mbox{\hyperlink{structsession_a29ffa9635cf0b2dde142ffeb835c2f43}{id}});}
+\DoxyCodeLine{314      mysql\_query(db, query);}
+\DoxyCodeLine{315      result = mysql\_store\_result(db);}
+\DoxyCodeLine{316      num\_champs = mysql\_num\_fields(result);}
+\DoxyCodeLine{317      \textcolor{keywordflow}{while} ((row = mysql\_fetch\_row(result)))\{}
+\DoxyCodeLine{318           \mbox{\hyperlink{structfilm}{Film}} * \mbox{\hyperlink{structfilm}{film}};}
+\DoxyCodeLine{319           lengths = mysql\_fetch\_lengths(result);}
+\DoxyCodeLine{320           sprintf(\mbox{\hyperlink{structfilm}{film}}-\/>\mbox{\hyperlink{structfilm_a4acbafdef3f4db6c506188b57b9aa1e6}{titre}}, \textcolor{stringliteral}{"{}\%s"{}}, row[2]);}
+\DoxyCodeLine{321           sprintf(\mbox{\hyperlink{structfilm}{film}}-\/>\mbox{\hyperlink{structfilm_a956c048b78895d1e6b88a9f9ec0fd637}{description}}, \textcolor{stringliteral}{"{}\%s"{}}, row[3]);}
+\DoxyCodeLine{322           sprintf(\mbox{\hyperlink{structfilm}{film}}-\/>\mbox{\hyperlink{structfilm_a1b51f780a844771f2ebd8e117bf0cdff}{auteur}}, \textcolor{stringliteral}{"{}\%s"{}}, row[4]);}
+\DoxyCodeLine{323           \mbox{\hyperlink{structfilm}{film}}-\/>\mbox{\hyperlink{structfilm_a47a330f45cd7aa0cfbc059d9eeab1c78}{id}} = atoi(row[0]);}
+\DoxyCodeLine{324           \mbox{\hyperlink{structfilm}{film}}-\/>\mbox{\hyperlink{structfilm_a3573647ae7de9da9744bc8e1ca8618b4}{session}} = \mbox{\hyperlink{structsession}{session}};}
+\DoxyCodeLine{325           filmTable[i] = \mbox{\hyperlink{structfilm}{film}};}
+\DoxyCodeLine{326           i++;}
+\DoxyCodeLine{327       \}}
+\DoxyCodeLine{328      \textcolor{keywordflow}{return} filmTable;   }
+\DoxyCodeLine{329 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{function-bd_8h_adaee5408f4f783ab52d66026baabb539}\label{function-bd_8h_adaee5408f4f783ab52d66026baabb539}} 
+\index{function-\/bd.h@{function-\/bd.h}!getPlaceByEventId@{getPlaceByEventId}}
+\index{getPlaceByEventId@{getPlaceByEventId}!function-\/bd.h@{function-\/bd.h}}
+\doxysubsubsection{\texorpdfstring{getPlaceByEventId()}{getPlaceByEventId()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struc_8h_ada528b7d640498194e7205985520646d}{Place}}$\ast$$\ast$ get\+Place\+By\+Event\+Id (\begin{DoxyParamCaption}\item[{MYSQL $\ast$}]{db,  }\item[{\mbox{\hyperlink{struc_8h_ab2f494a6b60c0f52e6c2a96fbe4d010c}{Event}} $\ast$}]{event }\end{DoxyParamCaption})}
+
+
+
+Récupère toutes les places associées à un événement donné dans la base de données. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em db} & Pointeur vers la base de données \\
+\hline
+{\em event} & Pointeur vers l\textquotesingle{}événement pour lequel récupérer les places \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+Place$\ast$$\ast$ Tableau de pointeurs vers les places associées à l\textquotesingle{}événement 
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{227                                                     \{}
+\DoxyCodeLine{228      MYSQL\_RES *result = NULL;}
+\DoxyCodeLine{229      MYSQL\_ROW row;}
+\DoxyCodeLine{230      \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} i = 0;}
+\DoxyCodeLine{231      \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} num\_champs = 0;}
+\DoxyCodeLine{232      \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{long} *lengths;}
+\DoxyCodeLine{233      \textcolor{keywordtype}{char} query[1000];}
+\DoxyCodeLine{234      \mbox{\hyperlink{structplace}{Place}} **placeTable =malloc(100 * \textcolor{keyword}{sizeof}(\mbox{\hyperlink{structplace}{Place}}*));}
+\DoxyCodeLine{235      sprintf(query, \textcolor{stringliteral}{"{}select * from place inner join event on place.eve\_id=event.id where event.id=\%d"{}}, \mbox{\hyperlink{structevent}{event}}-\/>\mbox{\hyperlink{structevent_a0a0a7d584539d22a52689acd33be40de}{id}});}
+\DoxyCodeLine{236      mysql\_query(db, query);}
+\DoxyCodeLine{237      result = mysql\_store\_result(db);}
+\DoxyCodeLine{238      num\_champs = mysql\_num\_fields(result);}
+\DoxyCodeLine{239      \textcolor{keywordflow}{while} ((row = mysql\_fetch\_row(result)))\{}
+\DoxyCodeLine{240           \mbox{\hyperlink{structplace}{Place}} * \mbox{\hyperlink{structplace}{place}} = malloc(100 * \textcolor{keyword}{sizeof}(\mbox{\hyperlink{structplace}{Place}}));}
+\DoxyCodeLine{241           lengths = mysql\_fetch\_lengths(result);}
+\DoxyCodeLine{242           \mbox{\hyperlink{structplace}{place}}-\/>\mbox{\hyperlink{structplace_a44dd9a5288b603a5487d6556275da6e8}{number}}= atoi(row[2]);}
+\DoxyCodeLine{243           \mbox{\hyperlink{structplace}{place}}-\/>\mbox{\hyperlink{structplace_a4157b92fc28e3ac81a6ef8eb420bd021}{id}} = atoi(row[0]);}
+\DoxyCodeLine{244           \mbox{\hyperlink{structplace}{place}}-\/>\mbox{\hyperlink{structplace_ae6c9df23260a268ea37510073e325d99}{event}} = \mbox{\hyperlink{structevent}{event}};}
+\DoxyCodeLine{245           placeTable[i] = \mbox{\hyperlink{structplace}{place}};}
+\DoxyCodeLine{246           i++;}
+\DoxyCodeLine{247       \}}
+\DoxyCodeLine{248      \textcolor{keywordflow}{return} placeTable;   }
+\DoxyCodeLine{249 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{function-bd_8h_adbad9aa2a5a8e515f6bc7e563b614479}\label{function-bd_8h_adbad9aa2a5a8e515f6bc7e563b614479}} 
+\index{function-\/bd.h@{function-\/bd.h}!getPlatByEventId@{getPlatByEventId}}
+\index{getPlatByEventId@{getPlatByEventId}!function-\/bd.h@{function-\/bd.h}}
+\doxysubsubsection{\texorpdfstring{getPlatByEventId()}{getPlatByEventId()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struc_8h_a2c54d8dd00dce800770714245e8956a3}{Plat}}$\ast$$\ast$ get\+Plat\+By\+Event\+Id (\begin{DoxyParamCaption}\item[{MYSQL $\ast$}]{db,  }\item[{\mbox{\hyperlink{struc_8h_ab2f494a6b60c0f52e6c2a96fbe4d010c}{Event}} $\ast$}]{event }\end{DoxyParamCaption})}
+
+
+
+Récupère tous les plats associés à un événement donné dans la base de données. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em db} & Pointeur vers la base de données \\
+\hline
+{\em event} & Pointeur vers l\textquotesingle{}événement pour lequel récupérer les plats \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+Plat$\ast$$\ast$ Tableau de pointeurs vers les plats associés à l\textquotesingle{}événement 
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{178                                                   \{}
+\DoxyCodeLine{179      MYSQL\_RES *result = NULL;}
+\DoxyCodeLine{180      MYSQL\_ROW row;}
+\DoxyCodeLine{181      \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} i = 0;}
+\DoxyCodeLine{182      \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} num\_champs = 0;}
+\DoxyCodeLine{183      \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{long} *lengths;}
+\DoxyCodeLine{184      \textcolor{keywordtype}{char} query[1000];}
+\DoxyCodeLine{185      \mbox{\hyperlink{structplat}{Plat}} **platTable = malloc(100 * \textcolor{keyword}{sizeof}(\mbox{\hyperlink{structplat}{Plat}}*));}
+\DoxyCodeLine{186      sprintf(query, \textcolor{stringliteral}{"{}select * from plat inner join event on plat.eve\_id=event.id where event.id=\%d"{}}, \mbox{\hyperlink{structevent}{event}}-\/>\mbox{\hyperlink{structevent_a0a0a7d584539d22a52689acd33be40de}{id}});}
+\DoxyCodeLine{187      mysql\_query(db, query);}
+\DoxyCodeLine{188      result = mysql\_store\_result(db);}
+\DoxyCodeLine{189      num\_champs = mysql\_num\_fields(result);}
+\DoxyCodeLine{190      \textcolor{keywordflow}{while} ((row = mysql\_fetch\_row(result)))\{}
+\DoxyCodeLine{191           \mbox{\hyperlink{structplat}{Plat}} * \mbox{\hyperlink{structplat}{plat}} = malloc(100 * \textcolor{keyword}{sizeof}(\mbox{\hyperlink{structplat}{Plat}}));}
+\DoxyCodeLine{192           lengths = mysql\_fetch\_lengths(result);}
+\DoxyCodeLine{193           sprintf(\mbox{\hyperlink{structplat}{plat}}-\/>\mbox{\hyperlink{structplat_a75ec3944619439c064e974f49f279a08}{label}}, \textcolor{stringliteral}{"{}\%s"{}}, row[2]);}
+\DoxyCodeLine{194           \mbox{\hyperlink{structplat}{plat}}-\/>\mbox{\hyperlink{structplat_aa79fc2c7d59677037226936c69e05040}{id}} = atoi(row[0]);}
+\DoxyCodeLine{195           \mbox{\hyperlink{structplat}{plat}}-\/>\mbox{\hyperlink{structplat_a732011e4a5e49613f80d1896f477c034}{event}} = \mbox{\hyperlink{structevent}{event}};}
+\DoxyCodeLine{196           platTable[i] = \mbox{\hyperlink{structplat}{plat}};}
+\DoxyCodeLine{197           i++;}
+\DoxyCodeLine{198       \}}
+\DoxyCodeLine{199      \textcolor{keywordflow}{return} platTable;   }
+\DoxyCodeLine{200 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{function-bd_8h_a206126954c808f6bf94a5aea8ecb1d19}\label{function-bd_8h_a206126954c808f6bf94a5aea8ecb1d19}} 
+\index{function-\/bd.h@{function-\/bd.h}!getSessionByEventId@{getSessionByEventId}}
+\index{getSessionByEventId@{getSessionByEventId}!function-\/bd.h@{function-\/bd.h}}
+\doxysubsubsection{\texorpdfstring{getSessionByEventId()}{getSessionByEventId()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struc_8h_afbe8e138e1d2fd861f6c09f63954e927}{Session}}$\ast$$\ast$ get\+Session\+By\+Event\+Id (\begin{DoxyParamCaption}\item[{MYSQL $\ast$}]{db,  }\item[{\mbox{\hyperlink{struc_8h_ab2f494a6b60c0f52e6c2a96fbe4d010c}{Event}} $\ast$}]{event }\end{DoxyParamCaption})}
+
+
+
+Récupère toutes les sessions associées à un événement donné dans la base de données. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em db} & Pointeur vers la base de données \\
+\hline
+{\em event} & Pointeur vers l\textquotesingle{}événement pour lequel récupérer les sessions \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+Session$\ast$$\ast$ Tableau de pointeurs vers les sessions associées à l\textquotesingle{}événement 
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{202                                                         \{}
+\DoxyCodeLine{203      MYSQL\_RES *result = NULL;}
+\DoxyCodeLine{204      MYSQL\_ROW row;}
+\DoxyCodeLine{205      \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} i = 0;}
+\DoxyCodeLine{206      \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} num\_champs = 0;}
+\DoxyCodeLine{207      \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{long} *lengths;}
+\DoxyCodeLine{208      \textcolor{keywordtype}{char} query[1000];}
+\DoxyCodeLine{209      \mbox{\hyperlink{structsession}{Session}} **sessionTable =malloc(100 * \textcolor{keyword}{sizeof}(\mbox{\hyperlink{structsession}{Session}}*));}
+\DoxyCodeLine{210      sprintf(query, \textcolor{stringliteral}{"{}select * from session inner join event on session.eve\_id=event.id where event.id=\%d"{}}, \mbox{\hyperlink{structevent}{event}}-\/>\mbox{\hyperlink{structevent_a0a0a7d584539d22a52689acd33be40de}{id}});}
+\DoxyCodeLine{211      mysql\_query(db, query);}
+\DoxyCodeLine{212      result = mysql\_store\_result(db);}
+\DoxyCodeLine{213      num\_champs = mysql\_num\_fields(result);}
+\DoxyCodeLine{214      \textcolor{keywordflow}{while} ((row = mysql\_fetch\_row(result)))\{}
+\DoxyCodeLine{215           \mbox{\hyperlink{structsession}{Session}} * \mbox{\hyperlink{structsession}{session}} = malloc(100 * \textcolor{keyword}{sizeof}(\mbox{\hyperlink{structsession}{Session}}));}
+\DoxyCodeLine{216           lengths = mysql\_fetch\_lengths(result);}
+\DoxyCodeLine{217           sprintf(\mbox{\hyperlink{structsession}{session}}-\/>\mbox{\hyperlink{structsession_a7d8f9b7d3450cd684ba092406e92bddd}{name}}, \textcolor{stringliteral}{"{}\%s"{}}, row[2]);}
+\DoxyCodeLine{218           sprintf(\mbox{\hyperlink{structsession}{session}}-\/>\mbox{\hyperlink{structsession_a1b8098084c00a0fc14a81a08e477a8b9}{dateSession}}, \textcolor{stringliteral}{"{}\%s"{}}, row[3]);}
+\DoxyCodeLine{219           \mbox{\hyperlink{structsession}{session}}-\/>\mbox{\hyperlink{structsession_a29ffa9635cf0b2dde142ffeb835c2f43}{id}} = atoi(row[0]);}
+\DoxyCodeLine{220           \textcolor{comment}{// sessionTable[i]-\/>film=getFilmBySessionId(db, session);}}
+\DoxyCodeLine{221           \mbox{\hyperlink{structsession}{session}}-\/>\mbox{\hyperlink{structsession_acdc3ec3972db9a769d2dac93e12bc839}{event}} = \mbox{\hyperlink{structevent}{event}};}
+\DoxyCodeLine{222           sessionTable[i] = \mbox{\hyperlink{structsession}{session}};}
+\DoxyCodeLine{223           i++;}
+\DoxyCodeLine{224       \}}
+\DoxyCodeLine{225      \textcolor{keywordflow}{return} sessionTable;   }
+\DoxyCodeLine{226 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{function-bd_8h_aa1356d9f82b02a369219b7476d75250d}\label{function-bd_8h_aa1356d9f82b02a369219b7476d75250d}} 
+\index{function-\/bd.h@{function-\/bd.h}!getTicketByUserId@{getTicketByUserId}}
+\index{getTicketByUserId@{getTicketByUserId}!function-\/bd.h@{function-\/bd.h}}
+\doxysubsubsection{\texorpdfstring{getTicketByUserId()}{getTicketByUserId()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struc_8h_a2be6cff79d24682be3e84aa7b649d892}{Ticket}}$\ast$ get\+Ticket\+By\+User\+Id (\begin{DoxyParamCaption}\item[{MYSQL $\ast$}]{db,  }\item[{\mbox{\hyperlink{struc_8h_af0288466725cf045591f80a7878cd7f2}{User}} $\ast$}]{user,  }\item[{\mbox{\hyperlink{struc_8h_ab2f494a6b60c0f52e6c2a96fbe4d010c}{Event}} $\ast$$\ast$}]{event }\end{DoxyParamCaption})}
+
+
+
+Récupère le ticket associé à un utilisateur et à un événement donnés dans la base de données. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em db} & Pointeur vers la base de données \\
+\hline
+{\em user} & Pointeur vers l\textquotesingle{}utilisateur pour lequel récupérer le ticket \\
+\hline
+{\em event} & Pointeur vers l\textquotesingle{}événement pour lequel récupérer le ticket \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+Ticket$\ast$ Pointeur vers le ticket associé à l\textquotesingle{}utilisateur et à l\textquotesingle{}événement 
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{250                                                                  \{}
+\DoxyCodeLine{251      MYSQL\_RES *result = NULL;}
+\DoxyCodeLine{252      MYSQL\_ROW row;}
+\DoxyCodeLine{253      \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} i = 0;}
+\DoxyCodeLine{254      \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} num\_champs = 0;}
+\DoxyCodeLine{255      \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{long} *lengths;}
+\DoxyCodeLine{256      \textcolor{keywordtype}{char} query[1000];}
+\DoxyCodeLine{257      \mbox{\hyperlink{structticket}{Ticket}} *ticketTable =malloc(100 * \textcolor{keyword}{sizeof}(\mbox{\hyperlink{structticket}{Ticket}}));}
+\DoxyCodeLine{258      sprintf(query, \textcolor{stringliteral}{"{}select * from ticket inner join user on ticket.use\_id=user.id where user.id=\%d"{}}, \mbox{\hyperlink{structuser}{user}}-\/>\mbox{\hyperlink{structuser_a7c4bd95a9611df1bae140f2ce6648c5a}{id}});}
+\DoxyCodeLine{259      mysql\_query(db, query);}
+\DoxyCodeLine{260      result = mysql\_store\_result(db);}
+\DoxyCodeLine{261      num\_champs = mysql\_num\_fields(result);}
+\DoxyCodeLine{262      \textcolor{keywordflow}{while} ((row = mysql\_fetch\_row(result)))\{}
+\DoxyCodeLine{263           lengths = mysql\_fetch\_lengths(result);}
+\DoxyCodeLine{264           ticketTable[i].\mbox{\hyperlink{structticket_ae4e090144335b1317a1512a5bc55ca52}{number}}= row[3];}
+\DoxyCodeLine{265           ticketTable[i].\mbox{\hyperlink{structticket_ad3cd21ffd06c78b3260dfae33ddc4f93}{id}} = atoi(row[0]);}
+\DoxyCodeLine{266           sprintf(ticketTable[i].dateTicket, \textcolor{stringliteral}{"{}\%s"{}}, row[4]);}
+\DoxyCodeLine{267           ticketTable[i].\mbox{\hyperlink{structticket_aced945b3176bf99ac7f05d5c83c3d577}{user}}= \mbox{\hyperlink{structuser}{user}};}
+\DoxyCodeLine{268           \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} j =0; j <100; j++)\{}
+\DoxyCodeLine{269                \textcolor{keywordflow}{if}(\mbox{\hyperlink{structevent}{event}}[j]!=NULL \&\& \mbox{\hyperlink{structevent}{event}}[j]-\/>\textcolor{keywordtype}{id}==row[2])\{}
+\DoxyCodeLine{270                     ticketTable[i].\mbox{\hyperlink{structticket_a0d7972a4819d3457b28aa9a283723ec4}{event}}= \textcolor{keyword}{event}[j];}
+\DoxyCodeLine{271                     \textcolor{keywordflow}{break};}
+\DoxyCodeLine{272                \}}
+\DoxyCodeLine{273           \}}
+\DoxyCodeLine{274           i++;}
+\DoxyCodeLine{275       \}}
+\DoxyCodeLine{276      \textcolor{keywordflow}{return} ticketTable;   }
+\DoxyCodeLine{277 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{function-bd_8h_a08279cf6a88accd06743c978a8b50473}\label{function-bd_8h_a08279cf6a88accd06743c978a8b50473}} 
+\index{function-\/bd.h@{function-\/bd.h}!getUsers@{getUsers}}
+\index{getUsers@{getUsers}!function-\/bd.h@{function-\/bd.h}}
+\doxysubsubsection{\texorpdfstring{getUsers()}{getUsers()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struc_8h_af0288466725cf045591f80a7878cd7f2}{User}}$\ast$ get\+Users (\begin{DoxyParamCaption}\item[{MYSQL $\ast$}]{db }\end{DoxyParamCaption})}
+
+
+
+Fonction pour créer un nouvel utilisateur dans la base de données. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em db} & Pointeur vers la base de données \\
+\hline
+{\em user} & Pointeur vers l\textquotesingle{}utilisateur à créer \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+Pointeur vers l\textquotesingle{}utilisateur créé dans la base de données / User \mbox{\hyperlink{function-bd_8c_a3c02e2ad6109da33dbb21de526f4b7b4}{create\+User(\+MYSQL $\ast$ db,\+User $\ast$ user)}}; /$\ast$$\ast$
+\end{DoxyReturn}
+Fonction pour créer un nouvel événement dans la base de données 
+\begin{DoxyParams}{Paramètres}
+{\em db} & Pointeur vers la base de données \\
+\hline
+{\em event} & Pointeur vers l\textquotesingle{}événement à créer \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+Pointeur vers l\textquotesingle{}événement créé dans la base de données / Event \mbox{\hyperlink{function-bd_8c_a795bf925a246abd3a1984e7dc733db7c}{create\+Event(\+MYSQL $\ast$ db,\+Event $\ast$ event)}}; /$\ast$$\ast$
+\end{DoxyReturn}
+Fonction pour récupérer tous les utilisateurs de la base de données 
+\begin{DoxyParams}{Paramètres}
+{\em db} & Pointeur vers la base de données \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+Pointeur vers un tableau d\textquotesingle{}utilisateurs récupérés depuis la base de données 
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{34 \{}
+\DoxyCodeLine{35      \textcolor{keywordtype}{char} query[] = \textcolor{stringliteral}{"{}select * from user"{}};}
+\DoxyCodeLine{36      \mbox{\hyperlink{structuser}{User}} *userTable =malloc(100 * \textcolor{keyword}{sizeof}(\mbox{\hyperlink{structuser}{User}}));}
+\DoxyCodeLine{37      MYSQL\_RES *result = NULL;}
+\DoxyCodeLine{38      MYSQL\_ROW row;}
+\DoxyCodeLine{39      \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} i = 0;}
+\DoxyCodeLine{40      \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} num\_champs = 0;}
+\DoxyCodeLine{41      \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{long} *lengths;}
+\DoxyCodeLine{42      mysql\_query(db, query);}
+\DoxyCodeLine{43      result = mysql\_store\_result(db);}
+\DoxyCodeLine{44      num\_champs = mysql\_num\_fields(result);}
+\DoxyCodeLine{45      \textcolor{keywordflow}{while} ((row = mysql\_fetch\_row(result)))\{}
+\DoxyCodeLine{46           lengths = mysql\_fetch\_lengths(result);}
+\DoxyCodeLine{47           sprintf(userTable[i].firstName, \textcolor{stringliteral}{"{}\%s"{}}, row[1]);}
+\DoxyCodeLine{48           sprintf(userTable[i].lastName, \textcolor{stringliteral}{"{}\%s"{}}, row[2]);}
+\DoxyCodeLine{49           sprintf(userTable[i].rule, \textcolor{stringliteral}{"{}\%s"{}}, row[3]);}
+\DoxyCodeLine{50           sprintf(userTable[i].email, \textcolor{stringliteral}{"{}\%s"{}}, row[4]);}
+\DoxyCodeLine{51           sprintf(userTable[i].password, \textcolor{stringliteral}{"{}\%s"{}}, row[5]);}
+\DoxyCodeLine{52           userTable[i].\mbox{\hyperlink{structuser_a7c4bd95a9611df1bae140f2ce6648c5a}{id}} = atoi(row[0]);}
+\DoxyCodeLine{53           i++;}
+\DoxyCodeLine{54       \}}
+\DoxyCodeLine{55       \textcolor{keywordflow}{return} userTable;}
+\DoxyCodeLine{56 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{function-bd_8h_a3fe9e952d0bb9ecf509b6d69f3be49d9}\label{function-bd_8h_a3fe9e952d0bb9ecf509b6d69f3be49d9}} 
+\index{function-\/bd.h@{function-\/bd.h}!updateEvent@{updateEvent}}
+\index{updateEvent@{updateEvent}!function-\/bd.h@{function-\/bd.h}}
+\doxysubsubsection{\texorpdfstring{updateEvent()}{updateEvent()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struc_8h_ab2f494a6b60c0f52e6c2a96fbe4d010c}{Event}}$\ast$ update\+Event (\begin{DoxyParamCaption}\item[{MYSQL $\ast$}]{db,  }\item[{\mbox{\hyperlink{struc_8h_ab2f494a6b60c0f52e6c2a96fbe4d010c}{Event}} $\ast$}]{event }\end{DoxyParamCaption})}
+
+
+
+Met à jour un événement dans la base de données. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em db} & Pointeur vers la base de données \\
+\hline
+{\em event} & Pointeur vers l\textquotesingle{}événement à mettre à jour \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+Event$\ast$ Pointeur vers l\textquotesingle{}événement mis à jour si la mise à jour a réussi, NULL sinon 
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{159 \{}
+\DoxyCodeLine{160      MYSQL\_RES *result = NULL;}
+\DoxyCodeLine{161      MYSQL\_ROW row;}
+\DoxyCodeLine{162      \textcolor{keywordtype}{int} i = 0;}
+\DoxyCodeLine{163      \textcolor{keywordtype}{char} query[1000];}
+\DoxyCodeLine{164      sprintf(query, \textcolor{stringliteral}{"{}update event set type=\(\backslash\)"{}\%s\(\backslash\)"{}, place=\(\backslash\)"{}\%s\(\backslash\)"{}, date\_event=\(\backslash\)"{}\%s\(\backslash\)"{}, label=\(\backslash\)"{}\%s\(\backslash\)"{} where id=\%d"{}}, \mbox{\hyperlink{structevent}{event}}-\/>\mbox{\hyperlink{structevent_a85cb31e3168290349d1d413cd16d5e6d}{type}}, \mbox{\hyperlink{structevent}{event}}-\/>\mbox{\hyperlink{structevent_aff19ea99812a1bde1467424c296f74f2}{lieu}}, \mbox{\hyperlink{structevent}{event}}-\/>\mbox{\hyperlink{structevent_a3fa0d88aa80ecf108a74c45e8c0e71c5}{dateEvent}}, \mbox{\hyperlink{structevent}{event}}-\/>\mbox{\hyperlink{structevent_ab36786006bd272b70d17bdfb8fcdc939}{label}}, \mbox{\hyperlink{structevent}{event}}-\/>\mbox{\hyperlink{structevent_a0a0a7d584539d22a52689acd33be40de}{id}});}
+\DoxyCodeLine{165      mysql\_query(db, query);}
+\DoxyCodeLine{166      \textcolor{keywordflow}{return} \mbox{\hyperlink{structevent}{event}};}
+\DoxyCodeLine{167 \}}
+
+\end{DoxyCode}

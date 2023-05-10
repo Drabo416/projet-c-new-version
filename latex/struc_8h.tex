@@ -1,0 +1,84 @@
+\hypertarget{struc_8h}{}\doxysection{Référence du fichier struc.\+h}
+\label{struc_8h}\index{struc.h@{struc.h}}
+Ce graphe montre quels fichiers incluent directement ou indirectement ce fichier \+:
+% FIG 0
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structuser}{user}}
+\item 
+struct \mbox{\hyperlink{structplace}{place}}
+\begin{DoxyCompactList}\small\item\em Structure représentant un emplacement. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structfilm}{film}}
+\begin{DoxyCompactList}\small\item\em Structure représentant un film Cette structure représente un film et contient son identifiant, son titre, sa description, son auteur, ainsi que la session associée à ce film. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structticket}{ticket}}
+\begin{DoxyCompactList}\small\item\em Structure représentant un billet Cette structure représente un billet et contient son identifiant, son numéro, sa date d\textquotesingle{}émission, l\textquotesingle{}utilisateur qui l\textquotesingle{}a acheté ainsi que l\textquotesingle{}événement auquel il est associé. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structevent}{event}}
+\begin{DoxyCompactList}\small\item\em Structure représentant un événement Cette structure représente un événement et contient son identifiant, son type, son lieu, son label, sa date, ainsi que les sessions, emplacements, billets et plats associés à cet événement. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structplat}{plat}}
+\begin{DoxyCompactList}\small\item\em Structure représentant un plat. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structsession}{session}}
+\begin{DoxyCompactList}\small\item\em Structure représentant une session. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Définitions de type}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \mbox{\hyperlink{structuser}{user}} \mbox{\hyperlink{struc_8h_af0288466725cf045591f80a7878cd7f2}{User}}
+\item 
+typedef struct \mbox{\hyperlink{structplace}{place}} \mbox{\hyperlink{struc_8h_ada528b7d640498194e7205985520646d}{Place}}
+\item 
+typedef struct \mbox{\hyperlink{structticket}{ticket}} \mbox{\hyperlink{struc_8h_a2be6cff79d24682be3e84aa7b649d892}{Ticket}}
+\item 
+typedef struct \mbox{\hyperlink{structplat}{plat}} \mbox{\hyperlink{struc_8h_a2c54d8dd00dce800770714245e8956a3}{Plat}}
+\item 
+typedef struct \mbox{\hyperlink{structevent}{event}} \mbox{\hyperlink{struc_8h_ab2f494a6b60c0f52e6c2a96fbe4d010c}{Event}}
+\item 
+typedef struct \mbox{\hyperlink{structsession}{session}} \mbox{\hyperlink{struc_8h_afbe8e138e1d2fd861f6c09f63954e927}{Session}}
+\item 
+typedef struct \mbox{\hyperlink{structfilm}{film}} \mbox{\hyperlink{struc_8h_a7be70f7244cbc0812a720373117ac45e}{Film}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Documentation des définitions de type}
+\mbox{\Hypertarget{struc_8h_ab2f494a6b60c0f52e6c2a96fbe4d010c}\label{struc_8h_ab2f494a6b60c0f52e6c2a96fbe4d010c}} 
+\index{struc.h@{struc.h}!Event@{Event}}
+\index{Event@{Event}!struc.h@{struc.h}}
+\doxysubsubsection{\texorpdfstring{Event}{Event}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{structevent}{event}} \mbox{\hyperlink{struc_8h_ab2f494a6b60c0f52e6c2a96fbe4d010c}{Event}}}
+
+Type de données représentant un événement \mbox{\Hypertarget{struc_8h_a7be70f7244cbc0812a720373117ac45e}\label{struc_8h_a7be70f7244cbc0812a720373117ac45e}} 
+\index{struc.h@{struc.h}!Film@{Film}}
+\index{Film@{Film}!struc.h@{struc.h}}
+\doxysubsubsection{\texorpdfstring{Film}{Film}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{structfilm}{film}} \mbox{\hyperlink{struc_8h_a7be70f7244cbc0812a720373117ac45e}{Film}}}
+
+Type de données représentant un film \mbox{\Hypertarget{struc_8h_ada528b7d640498194e7205985520646d}\label{struc_8h_ada528b7d640498194e7205985520646d}} 
+\index{struc.h@{struc.h}!Place@{Place}}
+\index{Place@{Place}!struc.h@{struc.h}}
+\doxysubsubsection{\texorpdfstring{Place}{Place}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{structplace}{place}} \mbox{\hyperlink{struc_8h_ada528b7d640498194e7205985520646d}{Place}}}
+
+Type de données représentant un emplacement pour un événement \mbox{\Hypertarget{struc_8h_a2c54d8dd00dce800770714245e8956a3}\label{struc_8h_a2c54d8dd00dce800770714245e8956a3}} 
+\index{struc.h@{struc.h}!Plat@{Plat}}
+\index{Plat@{Plat}!struc.h@{struc.h}}
+\doxysubsubsection{\texorpdfstring{Plat}{Plat}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{structplat}{plat}} \mbox{\hyperlink{struc_8h_a2c54d8dd00dce800770714245e8956a3}{Plat}}}
+
+Type de données représentant un plat pour un événement \mbox{\Hypertarget{struc_8h_afbe8e138e1d2fd861f6c09f63954e927}\label{struc_8h_afbe8e138e1d2fd861f6c09f63954e927}} 
+\index{struc.h@{struc.h}!Session@{Session}}
+\index{Session@{Session}!struc.h@{struc.h}}
+\doxysubsubsection{\texorpdfstring{Session}{Session}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{structsession}{session}} \mbox{\hyperlink{struc_8h_afbe8e138e1d2fd861f6c09f63954e927}{Session}}}
+
+Type de données représentant une session pour un événement \mbox{\Hypertarget{struc_8h_a2be6cff79d24682be3e84aa7b649d892}\label{struc_8h_a2be6cff79d24682be3e84aa7b649d892}} 
+\index{struc.h@{struc.h}!Ticket@{Ticket}}
+\index{Ticket@{Ticket}!struc.h@{struc.h}}
+\doxysubsubsection{\texorpdfstring{Ticket}{Ticket}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{structticket}{ticket}} \mbox{\hyperlink{struc_8h_a2be6cff79d24682be3e84aa7b649d892}{Ticket}}}
+
+Type de données représentant un billet pour un événement \mbox{\Hypertarget{struc_8h_af0288466725cf045591f80a7878cd7f2}\label{struc_8h_af0288466725cf045591f80a7878cd7f2}} 
+\index{struc.h@{struc.h}!User@{User}}
+\index{User@{User}!struc.h@{struc.h}}
+\doxysubsubsection{\texorpdfstring{User}{User}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{structuser}{user}} \mbox{\hyperlink{struc_8h_af0288466725cf045591f80a7878cd7f2}{User}}}
+
+Type de données représentant un utilisateur 
